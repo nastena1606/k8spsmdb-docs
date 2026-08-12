@@ -10,7 +10,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="LDAP services provided by software like OpenLDAP, Microsoft Active Directory, etc. are widely used by enterprises to control information about users, systems, networks, services and applications and the corresponding access rights for the authentication/authorization process in a centralized way.">
+        <meta name="description" content="Enterprises use LDAP services provided by software like OpenLDAP, Microsoft Active Directory, etc. to control information about users, systems, networks, services and applications and manage corresponding access rights for the authentication/authorization process in a centralized way.">
       
       
         <meta name="author" content="Percona LLC">
@@ -19,10 +19,10 @@
         <link rel="canonical" href="https://docs.percona.com/percona-operator-for-mongodb/1.23.0/ldap.html">
       
       
-        <link rel="prev" href="custom-install.html">
+        <link rel="prev" href="system-users-vault-setup.html">
       
       
-        <link rel="next" href="custom-registry.html">
+        <link rel="next" href="oidc.html">
       
       
         
@@ -106,8 +106,8 @@
                  
                  <meta property="og:type" content="website" />
                  <meta property="og:title" content="Percona Operator for MongoDB - OpenLDAP integration" />
-                 <meta property="og:image" content="https://docs.percona.com/percona-operator-for-mongodb/assets/images/kubernetes-operators.png">
-                 <meta property="og:url" content="https://docs.percona.com/percona-operator-for-mongodb/">
+                 <meta property="og:image" content="https://docs.percona.com/percona-operator-for-mongodb/latest/assets/images/kubernetes-operators.png">
+                 <meta property="og:url" content="https://docs.percona.com/percona-operator-for-mongodb/latest/index.html">
                 </head>
                 <body>
                 </body>
@@ -542,6 +542,34 @@
     
   
     Comparison with other solutions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="limitations.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Known limitations
   
 
     
@@ -1117,6 +1145,34 @@
   
   
     <li class="md-nav__item">
+      <a href="rke2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Install on Rancher Kubernetes Engine (RKE2)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="kubernetes.html" class="md-nav__link">
         
   
@@ -1649,18 +1705,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
         
           
           <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
@@ -1681,7 +1739,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1829,6 +1887,34 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="connection-secrets.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Connection secrets
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
     
     
     
@@ -1838,10 +1924,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_1_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_1_5" >
         
           
-          <label class="md-nav__link" for="__nav_7_1_4" id="__nav_7_1_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7_1_5" id="__nav_7_1_5_label" tabindex="0">
             
   
   
@@ -1859,8 +1945,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_1_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_1_4">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_1_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_1_5">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1946,6 +2032,230 @@
                 
   
   
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Authentication
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Authentication
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OpenLDAP integration
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="ldap.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OpenLDAP integration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#configure-the-openldap-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configure the OpenLDAP server
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configure-the-operator-and-percona-server-for-mongodb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configure the Operator and Percona Server for MongoDB
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configure the Operator and Percona Server for MongoDB">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#replica-set" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Replica set
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sharded-cluster" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sharded cluster
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#oidc-authentication-and-ldap-authorization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        OIDC authentication and LDAP authorization
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-ldap-over-tls-connection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using LDAP over TLS connection
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="oidc.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OIDC authentication
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
   
   
     <li class="md-nav__item">
@@ -1965,6 +2275,42 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="auth-bypass-localhost.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Disable localhost authentication bypass
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -2368,6 +2714,34 @@
     
   
     Update certificates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tls-cert-management-policy.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configure the TLS certificate management policy
   
 
     
@@ -3213,6 +3587,62 @@
   
   
     <li class="md-nav__item">
+      <a href="backups-storage-oss.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Alibaba Cloud OSS storage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="backups-storage-oci.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Oracle Cloud Infrastructure Object Storage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="backups-storage-filesystem.html" class="md-nav__link">
         
   
@@ -3323,7 +3753,7 @@
   <span class="md-ellipsis">
     
   
-    Make a backup
+    PVC snapshot backups
   
 
     
@@ -3336,6 +3766,145 @@
         
         <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_1_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8_1_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    PVC snapshot backups
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="backups-pvc-snapshots.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="backups-pvc-setup.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configure PVC snapshots
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="backups-pvc-usage.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Use PVC snapshots
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_1_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_1_6" id="__nav_8_1_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Make a backup
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_1_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_1_6">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -3452,10 +4021,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_1_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_1_8" >
         
           
-          <label class="md-nav__link" for="__nav_8_1_7" id="__nav_8_1_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_8_1_8" id="__nav_8_1_8_label" tabindex="0">
             
   
   
@@ -3473,8 +4042,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_1_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8_1_7">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_1_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_1_8">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -3555,6 +4124,34 @@
     
   
     On a new cluster with different replica set names
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="backups-restore-new-name.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Restore a collection under a different name
   
 
     
@@ -4147,6 +4744,117 @@
   
   
   
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_4" id="__nav_8_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Real-time replication with Percona ClusterSync for MongoDB
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Real-time replication with Percona ClusterSync for MongoDB
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="clustersync.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About PCSM integration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="clustersync-setup.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Set up and use PCSM
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
       <a href="monitoring.html" class="md-nav__link">
         
@@ -4285,7 +4993,7 @@
   <span class="md-ellipsis">
     
   
-    Troubleshooting
+    Search and Vector search
   
 
     
@@ -4298,6 +5006,116 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Search and Vector search
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="search-overview.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About full-text and vector search
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="search-setup.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configure search and vector search
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Troubleshooting
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -4426,6 +5244,34 @@
   
   
     <li class="md-nav__item">
+      <a href="debug-backup-restore.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Troubleshoot backups and restores
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="debug-images.html" class="md-nav__link">
         
   
@@ -4486,23 +5332,21 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
         
           
-          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
             
   
   
@@ -4520,8 +5364,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_10">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -4554,142 +5398,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    OpenLDAP integration
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="ldap.html" class="md-nav__link md-nav__link--active">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    OpenLDAP integration
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#the-openldap-side" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        The OpenLDAP side
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#the-mongodb-and-operator-side" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        The MongoDB and Operator side
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="The MongoDB and Operator side">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#if-sharding-is-off" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        If sharding is off
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#if-sharding-is-on" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        If sharding is on
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#using-ldap-over-tls-connection" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Using LDAP over TLS connection
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -4870,34 +5578,6 @@
   
   
     <li class="md-nav__item">
-      <a href="image-query.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Retrieve Percona certified images
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="delete.html" class="md-nav__link">
         
   
@@ -4941,10 +5621,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
         
           
-          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
             
   
   
@@ -4962,12 +5642,59 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_11">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
             <span class="md-nav__icon md-icon"></span>
             
   
     Reference
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_12_1" id="__nav_12_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Custom Resource reference
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_12_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Custom Resource reference
   
 
           </label>
@@ -4987,7 +5714,7 @@
   <span class="md-ellipsis">
     
   
-    Custom Resource options
+    PerconaServerMongoDB options
   
 
     
@@ -5015,7 +5742,7 @@
   <span class="md-ellipsis">
     
   
-    Backup Resource options
+    Backup options
   
 
     
@@ -5043,7 +5770,7 @@
   <span class="md-ellipsis">
     
   
-    Restore Resource options
+    Restore options
   
 
     
@@ -5052,6 +5779,42 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="clustersync-options.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ClusterSync options
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -5091,6 +5854,53 @@
   
   
   
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_12_3" id="__nav_12_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Certified images
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_12_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Certified images
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
       <a href="images.html" class="md-nav__link">
         
@@ -5108,6 +5918,42 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="image-query.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Retrieve Percona certified images
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -5203,6 +6049,53 @@
   
   
   
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_12_7" id="__nav_12_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Legal
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_12_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Legal
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
       <a href="copyright.html" class="md-nav__link">
         
@@ -5253,6 +6146,42 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="legal-notice.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Legal Notice
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -5275,10 +6204,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13" >
         
           
-          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_13" id="__nav_13_label" tabindex="0">
             
   
   
@@ -5296,8 +6225,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_12">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_13">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -5322,6 +6251,34 @@
     
   
     Release notes index
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="RN/Kubernetes-Operator-for-PSMONGODB-RN1.23.0.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Percona Operator for MongoDB 1.23.0 (2026-07-23)
   
 
     
@@ -6481,10 +7438,10 @@ box-shadow: 0 1px 3px rgba(0,0,0,0.2);
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#the-openldap-side" class="md-nav__link">
+  <a href="#configure-the-openldap-server" class="md-nav__link">
     <span class="md-ellipsis">
       
-        The OpenLDAP side
+        Configure the OpenLDAP server
       
     </span>
   </a>
@@ -6492,22 +7449,22 @@ box-shadow: 0 1px 3px rgba(0,0,0,0.2);
 </li>
       
         <li class="md-nav__item">
-  <a href="#the-mongodb-and-operator-side" class="md-nav__link">
+  <a href="#configure-the-operator-and-percona-server-for-mongodb" class="md-nav__link">
     <span class="md-ellipsis">
       
-        The MongoDB and Operator side
+        Configure the Operator and Percona Server for MongoDB
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="The MongoDB and Operator side">
+    <nav class="md-nav" aria-label="Configure the Operator and Percona Server for MongoDB">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#if-sharding-is-off" class="md-nav__link">
+  <a href="#replica-set" class="md-nav__link">
     <span class="md-ellipsis">
       
-        If sharding is off
+        Replica set
       
     </span>
   </a>
@@ -6515,10 +7472,10 @@ box-shadow: 0 1px 3px rgba(0,0,0,0.2);
 </li>
         
           <li class="md-nav__item">
-  <a href="#if-sharding-is-on" class="md-nav__link">
+  <a href="#sharded-cluster" class="md-nav__link">
     <span class="md-ellipsis">
       
-        If sharding is on
+        Sharded cluster
       
     </span>
   </a>
@@ -6527,6 +7484,17 @@ box-shadow: 0 1px 3px rgba(0,0,0,0.2);
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#oidc-authentication-and-ldap-authorization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        OIDC authentication and LDAP authorization
+      
+    </span>
+  </a>
   
 </li>
       
@@ -6595,10 +7563,19 @@ window.addEventListener('afterprint', (event) => {
 
 
 <h1 id="how-to-integrate-percona-operator-for-mongodb-with-openldap">How to integrate Percona Operator for MongoDB with OpenLDAP<a class="headerlink" href="#how-to-integrate-percona-operator-for-mongodb-with-openldap" title="Permanent link">&para;</a></h1>
-<p>LDAP services provided by software like OpenLDAP, Microsoft Active Directory, etc. are widely used by enterprises to control information about users, systems, networks, services and applications and the corresponding access rights for the authentication/authorization process in a centralized way.</p>
-<p>The following guide covers a simple integration of the already-installed OpenLDAP server with Percona Distribution for MongoDB and the Operator. You can know more about LDAP concepts and <a href="https://en.wikipedia.org/wiki/LDAP_Data_Interchange_Format">LDIF  <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2m6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.042-.018.75.75 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1"/></svg></span></a> files used to configure it, and find how to install and configure OpenLDAP in the official <a href="https://www.openldap.org/doc/admin26/">OpenLDAP  <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2m6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.042-.018.75.75 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1"/></svg></span></a> and <a href="https://docs.percona.com/percona-server-for-mongodb/latest/authentication.html">Percona Server for MongoDB  <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2m6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.042-.018.75.75 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1"/></svg></span></a> documentation.</p>
-<h2 id="the-openldap-side">The OpenLDAP side<a class="headerlink" href="#the-openldap-side" title="Permanent link">&para;</a></h2>
-<p>You can add needed OpenLDAP settings will the following <a href="https://en.wikipedia.org/wiki/LDAP_Data_Interchange_Format">LDIF  <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2m6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.042-.018.75.75 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1"/></svg></span></a> portions:</p>
+<p>Enterprises use LDAP services provided by software like OpenLDAP, Microsoft Active Directory, etc. to control information about users, systems, networks, services and applications and manage corresponding access rights for the authentication/authorization process in a centralized way.</p>
+<p>The following guide describes the integration of OpenLDAP with Percona Server for MongoDB managed by the Operator. We assume your OpenLDAP server is already installed and running.</p>
+<p>To help you understand and perform the integration of OpenLDAP with Percona Server for MongoDB and the Operator, refer to the following resources:</p>
+<ul>
+<li>Learn about LDAP concepts and <a href="https://en.wikipedia.org/wiki/LDAP_Data_Interchange_Format">LDIF  <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2m6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.042-.018.75.75 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1"/></svg></span></a> files, which are used for configuration.</li>
+<li>Follow the official <a href="https://www.openldap.org/doc/admin26/">OpenLDAP documentation  <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2m6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.042-.018.75.75 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1"/></svg></span></a> for detailed instructions on how to install and configure OpenLDAP.</li>
+<li>Review the <a href="https://docs.percona.com/percona-server-for-mongodb/latest/authentication.html">Percona Server for MongoDB documentation  <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2m6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.042-.018.75.75 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1"/></svg></span></a> for guidance on configuring MongoDB to work with LDAP.</li>
+</ul>
+<h2 id="configure-the-openldap-server">Configure the OpenLDAP server<a class="headerlink" href="#configure-the-openldap-server" title="Permanent link">&para;</a></h2>
+<p>Add users to your LDAP directory. To do that, use <a href="https://en.wikipedia.org/wiki/LDAP_Data_Interchange_Format">LDIF  <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2m6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.042-.018.75.75 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1"/></svg></span></a> (LDAP Data Interchange Format) files. LDIF is a standard plain-text format for representing LDAP entries and operations. You create LDIF files to define new users, groups, or other LDAP directory entries, and then apply them to your directory using LDAP utilities like <code>ldapadd</code>. LDIF can describe any LDAP entry or modification, making it essential for managing your LDAP Data Information Tree (DIT).</p>
+<ol>
+<li>
+<p>Add the following LDIF portions to your OpenLDAP server.</p>
 <div class="highlight"><pre><span></span><code><span class="nt">0-percona-ous.ldif</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|-</span>
 <span class="w">  </span><span class="no">dn: ou=perconadba,dc=ldap,dc=local</span>
 <span class="w">  </span><span class="no">objectClass: organizationalUnit</span>
@@ -6628,22 +7605,29 @@ window.addEventListener('afterprint', (event) => {
 <span class="w">  </span><span class="no">ou: perconadba</span>
 <span class="w">  </span><span class="no">uniqueMember: uid=percona,ou=perconadba,dc=ldap,dc=local</span>
 </code></pre></div>
-<p>Also a read-only user should be created for the database-issued user lookups. If everything is done correctly, the following command should work, resetting the percona user password:</p>
+</li>
+<li>
+<p>Create a read-only user for the database-issued user lookups. Use the following command, resetting the percona user password:</p>
 <div class="highlight"><pre><span></span><code>ldappasswd<span class="w"> </span>-s<span class="w"> </span>percona<span class="w"> </span>-D<span class="w"> </span><span class="s2">&quot;cn=admin,dc=ldap,dc=local&quot;</span><span class="w"> </span>-w<span class="w"> </span>password<span class="w"> </span>-x<span class="w"> </span><span class="s2">&quot;uid=percona,ou=perconadba,dc=ldap,dc=local&quot;</span>
 </code></pre></div>
+</li>
+</ol>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If you are not sure about the approach to make references between user and group objects, <a href="https://www.openldap.org/doc/admin24/overlays.html">OpenDAP overlays  <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2m6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.042-.018.75.75 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1"/></svg></span></a> provide one of the possible ways to go.</p>
+<p>If you are not sure about the approach to make references between user and group objects, <a href="https://www.openldap.org/doc/admin24/overlays.html">OpenLDAP overlays  <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2m6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.042-.018.75.75 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1"/></svg></span></a> provide one of the possible ways to go.</p>
 </div>
-<h2 id="the-mongodb-and-operator-side">The MongoDB and Operator side<a class="headerlink" href="#the-mongodb-and-operator-side" title="Permanent link">&para;</a></h2>
-<p>The following steps will look different depending on whether sharding is on (the default behavior) or off.</p>
-<h3 id="if-sharding-is-off">If sharding is off<a class="headerlink" href="#if-sharding-is-off" title="Permanent link">&para;</a></h3>
-<p>In order to get MongoDB connected with OpenLDAP in case of a a non-sharded (ReplicaSet) MongoDB cluster we need to configure two things:</p>
+<h2 id="configure-the-operator-and-percona-server-for-mongodb">Configure the Operator and Percona Server for MongoDB<a class="headerlink" href="#configure-the-operator-and-percona-server-for-mongodb" title="Permanent link">&para;</a></h2>
+<p>The following steps will look different depending on your MongoDB topology.</p>
+<h3 id="replica-set">Replica set<a class="headerlink" href="#replica-set" title="Permanent link">&para;</a></h3>
+<p>To connect MongoDB to OpenLDAP in a non-sharded (replica set) cluster, you need to configure both:</p>
 <ul>
-<li>Mongod</li>
-<li>Internal mongodb role</li>
+<li><code>mongod</code></li>
+<li>An internal MongoDB role</li>
 </ul>
-<p>Create configuration Secrets for mongod:</p>
+<p>The steps are the following:</p>
+<ol>
+<li>
+<p>Create a configuration Secret for mongod. This fragment provides <code>mongod</code> configuration with LDAP-specific parameters, such as the FQDN of the LDAP server (<code>servers</code>), the explicit lookup user, domain rules, and more.</p>
 <div class="highlight"><span class="filename">my_mongod.conf</span><pre><span></span><code><span class="nt">security</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">authorization</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;enabled&quot;</span>
 <span class="w">  </span><span class="nt">ldap</span><span class="p">:</span>
@@ -6660,274 +7644,309 @@ window.addEventListener('afterprint', (event) => {
 <span class="w">            </span><span class="s">match</span><span class="nv"> </span><span class="s">:</span><span class="nv"> </span><span class="s">&quot;(.+)&quot;,</span>
 <span class="w">            </span><span class="s">ldapQuery:</span><span class="nv"> </span><span class="s">&quot;OU=perconadba,DC=ldap,DC=local??sub?(uid={0})&quot;</span>
 <span class="w">          </span><span class="s">}</span>
-<span class="w">   </span><span class="s">]&#39;</span>
+<span class="w">  </span><span class="s">]&#39;</span>
 <span class="nt">setParameter</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">authenticationMechanisms</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;PLAIN,SCRAM-SHA-1&#39;</span>
+<span class="w">  </span><span class="nt">authenticationMechanisms</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;PLAIN,SCRAM-SHA-256&#39;</span>
 </code></pre></div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>This fragment provides mongod with LDAP-specific parameters, such as FQDN of the LDAP server (<code>server</code>), explicit lookup user, domain rules, etc.</p>
-</div>
-<p>Put the snippet on you local machine and create a Kubernetes Secret object named based on <a href="operator.html#metadata">your MongoDB cluster name</a>:</p>
-<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>create<span class="w"> </span>secret<span class="w"> </span>generic<span class="w"> </span>&lt;your_cluster_name&gt;-rs0-mongod<span class="w"> </span>--from-file<span class="o">=</span>mongod.conf<span class="o">=</span>my_mongod.conf
+</li>
+<li>
+<p>Put the snippet on your local machine and create a Kubernetes Secret object named <code>&lt;cluster-name&gt;-&lt;replicaset-name&gt;-mongod</code>. Find the cluster name in the <code>metadata.name</code> field and the replica set name in the <code>spec.replsets.name</code> field of your Custom Resource. The following command creates a Secret for the cluster named <code>my-cluster-name</code> and <code>rs0</code> replica set:</p>
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>create<span class="w"> </span>secret<span class="w"> </span>generic<span class="w"> </span>my-cluster-name-rs0-mongod<span class="w"> </span>--from-file<span class="o">=</span>mongod.conf<span class="o">=</span>my_mongod.conf
 </code></pre></div>
-<p>Next step is to start the MongoDB cluster up as it’s described in <a href="kubernetes.html">Install Percona server for MongoDB on Kubernetes</a>. On successful completion of the steps from this doc, we are to proceed with setting the roles for the ‘external’ (managed by LDAP) user inside the MongoDB. For this, log into MongoDB as administrator:</p>
+</li>
+<li>
+<p>Apply the configuration to create or update the database:</p>
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>deploy/cr.yaml
+</code></pre></div>
+</li>
+<li>
+<p>Create roles for the ‘external’ user inside the MongoDB. This user is managed by LDAP. For this, log into MongoDB as administrator:</p>
 <div class="highlight"><pre><span></span><code>mongo<span class="w"> </span><span class="s2">&quot;mongodb+srv://userAdmin:&lt;userAdmin_password&gt;@&lt;your_cluster_name&gt;-rs0.&lt;your_namespace&gt;.svc.cluster.local/admin?replicaSet=rs0&amp;ssl=false&quot;</span>
 </code></pre></div>
 <p>When logged in, execute the following:</p>
-<div class="highlight" data-prompt="mongos>"><pre><span></span><code><span class="err">mo</span><span class="kc">n</span><span class="err">gos&gt;</span><span class="w"> </span><span class="err">db.ge</span><span class="kc">t</span><span class="err">Sibli</span><span class="kc">n</span><span class="err">gDB(</span><span class="s2">&quot;admin&quot;</span><span class="err">).crea</span><span class="kc">te</span><span class="err">Role(</span>
+<div class="highlight" data-prompt="admin>"><pre><span></span><code><span class="nx">admin</span><span class="o">&gt;</span><span class="w"> </span><span class="nx">db</span><span class="p">.</span><span class="nx">getSiblingDB</span><span class="p">(</span><span class="s2">&quot;admin&quot;</span><span class="p">).</span><span class="nx">createRole</span><span class="p">(</span>
 <span class="p">{</span>
-<span class="w"> </span><span class="err">role</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cn=admin,ou=perconadba,dc=ldap,dc=local&quot;</span><span class="p">,</span>
-<span class="w"> </span><span class="err">privileges</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span>
-<span class="w"> </span><span class="err">roles</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">   </span><span class="p">{</span>
-<span class="w">     </span><span class="nt">&quot;role&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;readAnyDatabase&quot;</span><span class="p">,</span>
-<span class="w">     </span><span class="nt">&quot;db&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;admin&quot;</span>
-<span class="w">   </span><span class="p">},</span>
-<span class="w">   </span><span class="p">{</span>
-<span class="w">     </span><span class="nt">&quot;role&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;dbAdminAnyDatabase&quot;</span><span class="p">,</span>
-<span class="w">     </span><span class="nt">&quot;db&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;admin&quot;</span>
-<span class="w">   </span><span class="p">},</span>
-<span class="w">   </span><span class="p">{</span>
-<span class="w">     </span><span class="nt">&quot;role&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;clusterMonitor&quot;</span><span class="p">,</span>
-<span class="w">     </span><span class="nt">&quot;db&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;admin&quot;</span>
-<span class="w">   </span><span class="p">},</span>
-<span class="w">   </span><span class="p">{</span>
-<span class="w">     </span><span class="nt">&quot;role&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;readWriteAnyDatabase&quot;</span><span class="p">,</span>
-<span class="w">     </span><span class="nt">&quot;db&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;admin&quot;</span>
-<span class="w">   </span><span class="p">},</span>
-<span class="w">   </span><span class="p">{</span>
-<span class="w">     </span><span class="nt">&quot;role&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;restore&quot;</span><span class="p">,</span>
-<span class="w">     </span><span class="nt">&quot;db&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;admin&quot;</span>
-<span class="w">   </span><span class="p">},</span>
-<span class="w">   </span><span class="p">{</span>
-<span class="w">     </span><span class="nt">&quot;role&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;backup&quot;</span><span class="p">,</span>
-<span class="w">     </span><span class="nt">&quot;db&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;admin&quot;</span>
-<span class="w">   </span><span class="p">}</span>
-<span class="w"> </span><span class="p">],</span>
+<span class="nx">role</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;cn=admin,ou=perconadba,dc=ldap,dc=local&quot;</span><span class="p">,</span>
+<span class="nx">privileges</span><span class="o">:</span><span class="w"> </span><span class="p">[],</span>
+<span class="nx">roles</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="p">{</span>
+<span class="w">    </span><span class="s2">&quot;role&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;readAnyDatabase&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;db&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;admin&quot;</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="p">{</span>
+<span class="w">    </span><span class="s2">&quot;role&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;dbAdminAnyDatabase&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;db&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;admin&quot;</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="p">{</span>
+<span class="w">    </span><span class="s2">&quot;role&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;clusterMonitor&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;db&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;admin&quot;</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="p">{</span>
+<span class="w">    </span><span class="s2">&quot;role&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;readWriteAnyDatabase&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;db&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;admin&quot;</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="p">{</span>
+<span class="w">    </span><span class="s2">&quot;role&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;restore&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;db&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;admin&quot;</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="p">{</span>
+<span class="w">    </span><span class="s2">&quot;role&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;backup&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;db&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;admin&quot;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">],</span>
 <span class="p">}</span>
-<span class="err">)</span>
+<span class="p">)</span>
 </code></pre></div>
+</li>
+</ol>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Extra roles listed in the above example are just to show more than one possible variant.</p>
 </div>
+<ol>
+<li>
 <p>Now the new <code>percona</code> user created inside OpenLDAP is able to login to MongoDB as administrator. Verify whether the user role has been identified correctly with the following command:</p>
 <div class="highlight"><pre><span></span><code>mongo<span class="w"> </span>--username<span class="w"> </span>percona<span class="w"> </span>--password<span class="w"> </span><span class="s1">&#39;percona&#39;</span><span class="w"> </span>--authenticationMechanism<span class="w"> </span><span class="s1">&#39;PLAIN&#39;</span><span class="w"> </span>--authenticationDatabase<span class="w"> </span><span class="s1">&#39;$external&#39;</span><span class="w"> </span>--host<span class="w"> </span>&lt;mongodb-rs-endpoint&gt;<span class="w"> </span>--port<span class="w"> </span><span class="m">27017</span>
 </code></pre></div>
 <p>When logged in, execute the following:</p>
-<div class="highlight" data-prompt="mongos>"><pre><span></span><code><span class="err">mo</span><span class="kc">n</span><span class="err">gos&gt;</span><span class="w"> </span><span class="err">db.ru</span><span class="kc">n</span><span class="err">Comma</span><span class="kc">n</span><span class="err">d(</span><span class="p">{</span><span class="err">co</span><span class="kc">nne</span><span class="err">c</span><span class="kc">t</span><span class="err">io</span><span class="kc">n</span><span class="err">S</span><span class="kc">tatus</span><span class="p">:</span><span class="mi">1</span><span class="p">}</span><span class="err">)</span>
+<div class="highlight" data-prompt="admin>"><pre><span></span><code><span class="nx">admin</span><span class="o">&gt;</span><span class="w"> </span><span class="nx">db</span><span class="p">.</span><span class="nx">runCommand</span><span class="p">({</span><span class="nx">connectionStatus</span><span class="o">:</span><span class="mf">1</span><span class="p">})</span>
 </code></pre></div>
-<p>The output should be like follows:</p>
-<div class="highlight" data-prompt="mongos>"><pre><span></span><code><span class="p">{</span>
-<span class="w"> </span><span class="nt">&quot;authInfo&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">   </span><span class="nt">&quot;authenticatedUsers&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">     </span><span class="p">{</span>
-<span class="w">       </span><span class="nt">&quot;user&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;percona&quot;</span><span class="p">,</span>
-<span class="w">       </span><span class="nt">&quot;db&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;$external&quot;</span>
-<span class="w">     </span><span class="p">}</span>
-<span class="w">   </span><span class="p">],</span>
-<span class="w">   </span><span class="nt">&quot;authenticatedUserRoles&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">     </span><span class="p">{</span>
-<span class="w">       </span><span class="nt">&quot;role&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;restore&quot;</span><span class="p">,</span>
-<span class="w">       </span><span class="nt">&quot;db&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;admin&quot;</span>
-<span class="w">     </span><span class="p">},</span>
-<span class="w">     </span><span class="p">{</span>
-<span class="w">       </span><span class="nt">&quot;role&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;readAnyDatabase&quot;</span><span class="p">,</span>
-<span class="w">       </span><span class="nt">&quot;db&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;admin&quot;</span>
-<span class="w">     </span><span class="p">},</span>
-<span class="w">     </span><span class="p">{</span>
-<span class="w">       </span><span class="nt">&quot;role&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;clusterMonitor&quot;</span><span class="p">,</span>
-<span class="w">       </span><span class="nt">&quot;db&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;admin&quot;</span>
-<span class="w">     </span><span class="p">},</span>
-<span class="w">     </span><span class="p">{</span>
-<span class="w">       </span><span class="nt">&quot;role&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;dbAdminAnyDatabase&quot;</span><span class="p">,</span>
-<span class="w">       </span><span class="nt">&quot;db&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;admin&quot;</span>
-<span class="w">     </span><span class="p">},</span>
-<span class="w">     </span><span class="p">{</span>
-<span class="w">       </span><span class="nt">&quot;role&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;backup&quot;</span><span class="p">,</span>
-<span class="w">       </span><span class="nt">&quot;db&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;admin&quot;</span>
-<span class="w">     </span><span class="p">},</span>
-<span class="w">     </span><span class="p">{</span>
-<span class="w">       </span><span class="nt">&quot;role&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cn=admin,ou=perconadba,dc=ldap,dc=local&quot;</span><span class="p">,</span>
-<span class="w">       </span><span class="nt">&quot;db&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;admin&quot;</span>
-<span class="w">     </span><span class="p">},</span>
-<span class="w">     </span><span class="p">{</span>
-<span class="w">       </span><span class="nt">&quot;role&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;readWriteAnyDatabase&quot;</span><span class="p">,</span>
-<span class="w">       </span><span class="nt">&quot;db&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;admin&quot;</span>
-<span class="w">     </span><span class="p">}</span>
-<span class="w">   </span><span class="p">]</span>
-<span class="w"> </span><span class="p">},</span>
-<span class="w"> </span><span class="nt">&quot;ok&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
-<span class="w"> </span><span class="nt">&quot;$clusterTime&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">   </span><span class="nt">&quot;clusterTime&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="err">Times</span><span class="kc">ta</span><span class="err">mp(</span><span class="mi">1663067287</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="err">)</span><span class="p">,</span>
-<span class="w">   </span><span class="nt">&quot;signature&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">     </span><span class="nt">&quot;hash&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="err">Bi</span><span class="kc">n</span><span class="err">Da</span><span class="kc">ta</span><span class="err">(</span><span class="mi">0</span><span class="p">,</span><span class="s2">&quot;ZaLGSVj4ZwZrngXZSOqXB5rx+oo=&quot;</span><span class="err">)</span><span class="p">,</span>
-<span class="w">     </span><span class="nt">&quot;keyId&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="err">NumberLo</span><span class="kc">n</span><span class="err">g(</span><span class="s2">&quot;7142816031004688408&quot;</span><span class="err">)</span>
-<span class="w">   </span><span class="p">}</span>
-<span class="w"> </span><span class="p">},</span>
-<span class="w"> </span><span class="nt">&quot;operationTime&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="err">Times</span><span class="kc">ta</span><span class="err">mp(</span><span class="mi">1663067287</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="err">)</span>
+<details class="example">
+<summary>Sample output</summary>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="nt">&quot;authInfo&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;authenticatedUsers&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;user&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;percona&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;db&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;$external&quot;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;authenticatedUserRoles&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;role&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;restore&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;db&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;admin&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;role&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;readAnyDatabase&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;db&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;admin&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;role&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;clusterMonitor&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;db&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;admin&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;role&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;dbAdminAnyDatabase&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;db&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;admin&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;role&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;backup&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;db&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;admin&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;role&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cn=admin,ou=perconadba,dc=ldap,dc=local&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;db&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;admin&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;role&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;readWriteAnyDatabase&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;db&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;admin&quot;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">},</span>
+<span class="nt">&quot;ok&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="nt">&quot;$clusterTime&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;clusterTime&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="err">Times</span><span class="kc">ta</span><span class="err">mp(</span><span class="mi">1663067287</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="err">)</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;signature&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;hash&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="err">Bi</span><span class="kc">n</span><span class="err">Da</span><span class="kc">ta</span><span class="err">(</span><span class="mi">0</span><span class="p">,</span><span class="s2">&quot;ZaLGSVj4ZwZrngXZSOqXB5rx+oo=&quot;</span><span class="err">)</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;keyId&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="err">NumberLo</span><span class="kc">n</span><span class="err">g(</span><span class="s2">&quot;7142816031004688408&quot;</span><span class="err">)</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">},</span>
+<span class="nt">&quot;operationTime&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="err">Times</span><span class="kc">ta</span><span class="err">mp(</span><span class="mi">1663067287</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="err">)</span>
 <span class="p">}</span>
-<span class="err">mo</span><span class="kc">n</span><span class="err">gos&gt;</span>
 </code></pre></div>
-<h3 id="if-sharding-is-on">If sharding is on<a class="headerlink" href="#if-sharding-is-on" title="Permanent link">&para;</a></h3>
-<p>In order to get MongoDB connected with OpenLDAP in this case we need to configure three things:</p>
+</details>
+</li>
+</ol>
+<h3 id="sharded-cluster">Sharded cluster<a class="headerlink" href="#sharded-cluster" title="Permanent link">&para;</a></h3>
+<p>To connect MongoDB to OpenLDAP in a sharded cluster, you need to configure the following components:</p>
 <ul>
-<li>Mongod</li>
-<li>Internal mongodb role</li>
-<li>Mongos</li>
+<li><code>mongod</code></li>
+<li>An internal MongoDB role</li>
+<li><code>mongos</code></li>
 </ul>
-<p>Both the routing interface (mongos) and the configuration ReplicaSet (mongod) have to be configured to make the LDAP server a part of the Authentication/Authorization chain. </p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>mongos is just a router between shards and underlying database instances, and configuration ReplicaSet is responsible for keeping information about database users and roles. Thus, the router can perform only authentication, while authorization is the responsibility of the configuration ReplicaSet.</p>
-</div>
-<p>Create configuration Secrets for the router and the configuration ReplicaSet respectively.</p>
-<p>Secret for the router should look as follows:</p>
-<div class="highlight"><span class="filename">my_mongos.conf</span><pre><span></span><code><span class="nt">security</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">ldap</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">servers</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;openldap&quot;</span>
-<span class="w">    </span><span class="nt">transportSecurity</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">none</span>
-<span class="w">    </span><span class="nt">bind</span><span class="p">:</span>
-<span class="w">      </span><span class="nt">queryUser</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;cn=readonly,dc=ldap,dc=local&quot;</span>
-<span class="w">      </span><span class="nt">queryPassword</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;password&quot;</span>
-<span class="w">    </span><span class="nt">userToDNMapping</span><span class="p">:</span>
-<span class="w">      </span><span class="s">&#39;[</span>
-<span class="w">          </span><span class="s">{</span>
-<span class="w">            </span><span class="s">match</span><span class="nv"> </span><span class="s">:</span><span class="nv"> </span><span class="s">&quot;(.+)&quot;,</span>
-<span class="w">            </span><span class="s">ldapQuery:</span><span class="nv"> </span><span class="s">&quot;OU=perconadba,DC=ldap,DC=local??sub?(uid={0})&quot;</span>
-<span class="w">          </span><span class="s">}</span>
-<span class="w">    </span><span class="s">]&#39;</span>
-<span class="nt">setParameter</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">authenticationMechanisms</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;PLAIN,SCRAM-SHA-1&#39;</span>
+<p>You must configure both <code>mongos</code> and the configuration server replica set (<code>mongod</code>) to make the LDAP server a part of the Authentication/Authorization chain.</p>
+<p><code>mongos</code> is a router between shards and underlying database instances, while configuration server replica set is responsible for keeping information about database users and roles. Thus, the router can perform only authentication, while authorization is the responsibility of the configuration server replica set.</p>
+<ol>
+<li>Create configuration Secrets for the <code>mongos</code> and the configuration server replica set respectively.</li>
+</ol>
+<p>Example Secret for <code>mongos</code>:</p>
+<div class="highlight"><pre><span></span><code>```yaml title=&quot;my_mongos.conf&quot;
+security:
+  ldap:
+    servers: &quot;openldap&quot;
+    transportSecurity: none
+    bind:
+      queryUser: &quot;cn=readonly,dc=ldap,dc=local&quot;
+      queryPassword: &quot;password&quot;
+    userToDNMapping:
+      &#39;[
+          {
+            match : &quot;(.+)&quot;,
+            ldapQuery: &quot;OU=perconadba,DC=ldap,DC=local??sub?(uid={0})&quot;
+          }
+    ]&#39;
+setParameter:
+  authenticationMechanisms: &#39;PLAIN,SCRAM-SHA-256&#39;
+```
+
+Example Secret for the configuration server replica set:
+
+```yaml title=&quot;my_mongod.conf&quot;
+security:
+  authorization: &quot;enabled&quot;
+  ldap:
+    authz:
+      queryTemplate: &#39;{USER}?memberOf?base&#39;
+    servers: &quot;openldap&quot;
+    transportSecurity: none
+    bind:
+      queryUser: &quot;cn=readonly,dc=ldap,dc=local&quot;
+      queryPassword: &quot;password&quot;
+    userToDNMapping:
+      &#39;[
+          {
+            match : &quot;(.+)&quot;,
+            ldapQuery: &quot;OU=perconadba,DC=ldap,DC=local??sub?(uid={0})&quot;
+          }
+    ]&#39;
+setParameter:
+  authenticationMechanisms: &#39;PLAIN,SCRAM-SHA-256&#39;
+```
+
+Both files are pretty much the same except the `authz` subsection, which is only present for the configuration server replica set.
 </code></pre></div>
-<p>Put the snippet on you local machine and create a Kubernetes Secret object named based on <a href="operator.html#metadata">your MongoDB cluster name</a>:</p>
-<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>create<span class="w"> </span>secret<span class="w"> </span>generic<span class="w"> </span>&lt;your_cluster_name&gt;-mongos<span class="w"> </span>--from-file<span class="o">=</span>mongos.conf<span class="o">=</span>my_mongos.conf
+<ol>
+<li>Put the snippets on your local machine and create Kubernetes Secret objects. The Secret for <code>mongos</code> is named <code>&lt;cluster-name&gt;-mongos</code>. The Secret for the configuration server replica set is named <code>&lt;cluster-name&gt;-cfg-mongod</code>.</li>
+</ol>
+<p>Find the cluster name in the <code>metadata.name</code> field of your Custom Resource. The following commands create Secrets for the cluster named <code>my-cluster-name</code>:</p>
+<div class="highlight"><pre><span></span><code>```bash
+kubectl create secret generic my-cluster-name-mongos --from-file=mongos.conf=my_mongos.conf
+kubectl create secret generic my-cluster-name-cfg-mongod --from-file=mongod.conf=my_mongod.conf
+```
 </code></pre></div>
-<p>Secret for the configuration ReplicaSet should look as follows:</p>
-<div class="highlight"><span class="filename">my_mongod.conf</span><pre><span></span><code><span class="nt">security</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">authorization</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;enabled&quot;</span>
-<span class="w">  </span><span class="nt">ldap</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">authz</span><span class="p">:</span>
-<span class="w">      </span><span class="nt">queryTemplate</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;{USER}?memberOf?base&#39;</span>
-<span class="w">    </span><span class="nt">servers</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;openldap&quot;</span>
-<span class="w">    </span><span class="nt">transportSecurity</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">none</span>
-<span class="w">    </span><span class="nt">bind</span><span class="p">:</span>
-<span class="w">      </span><span class="nt">queryUser</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;cn=readonly,dc=ldap,dc=local&quot;</span>
-<span class="w">      </span><span class="nt">queryPassword</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;password&quot;</span>
-<span class="w">    </span><span class="nt">userToDNMapping</span><span class="p">:</span>
-<span class="w">      </span><span class="s">&#39;[</span>
-<span class="w">          </span><span class="s">{</span>
-<span class="w">            </span><span class="s">match</span><span class="nv"> </span><span class="s">:</span><span class="nv"> </span><span class="s">&quot;(.+)&quot;,</span>
-<span class="w">            </span><span class="s">ldapQuery:</span><span class="nv"> </span><span class="s">&quot;OU=perconadba,DC=ldap,DC=local??sub?(uid={0})&quot;</span>
-<span class="w">          </span><span class="s">}</span>
-<span class="w">    </span><span class="s">]&#39;</span>
-<span class="nt">setParameter</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">authenticationMechanisms</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;PLAIN,SCRAM-SHA-1&#39;</span>
+<ol>
+<li>
+<p>Apply the configuration to create or update the database cluster:</p>
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>deploy/cr.yaml
 </code></pre></div>
-<p>Put the snippet on you local machine and create a Kubernetes Secret object named based on <a href="operator.html#metadata">your MongoDB cluster name</a>:</p>
-<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>create<span class="w"> </span>secret<span class="w"> </span>generic<span class="w"> </span>&lt;your_cluster_name&gt;-cfg-mongod<span class="w"> </span>--from-file<span class="o">=</span>mongod.conf<span class="o">=</span>my_mongod.conf
-</code></pre></div>
-<p>Both files are pretty much the same except the <code>authz</code> subsection, which is only present for the configuration ReplicaSet.</p>
-<p>Next step is to start the MongoDB cluster up as it’s described in <a href="kubernetes.html">Install Percona server for MongoDB on Kubernetes</a>. On successful completion of the steps from this doc, we are to proceed with setting the roles for the ‘external’ (managed by LDAP) user inside the MongoDB. For this, log into MongoDB as administrator:</p>
+</li>
+<li>
+<p>Create roles for the ‘external’ user inside the MongoDB. This user is managed by LDAP. For this, log into MongoDB as administrator:</p>
 <div class="highlight"><pre><span></span><code>mongo<span class="w"> </span><span class="s2">&quot;mongodb://userAdmin:&lt;userAdmin_password&gt;@&lt;your_cluster_name&gt;-mongos.&lt;your_namespace&gt;.svc.cluster.local/admin?ssl=false&quot;</span>
 </code></pre></div>
 <p>When logged in, execute the following:</p>
-<div class="highlight" data-prompt="mongos>"><pre><span></span><code><span class="err">mo</span><span class="kc">n</span><span class="err">gos&gt;</span><span class="w"> </span><span class="err">db.ge</span><span class="kc">t</span><span class="err">Sibli</span><span class="kc">n</span><span class="err">gDB(</span><span class="s2">&quot;admin&quot;</span><span class="err">).crea</span><span class="kc">te</span><span class="err">Role(</span>
+<div class="highlight" data-prompt="mongos>"><pre><span></span><code><span class="nx">mongos</span><span class="o">&gt;</span><span class="w"> </span><span class="nx">db</span><span class="p">.</span><span class="nx">getSiblingDB</span><span class="p">(</span><span class="s2">&quot;admin&quot;</span><span class="p">).</span><span class="nx">createRole</span><span class="p">(</span>
 <span class="p">{</span>
-<span class="w"> </span><span class="err">role</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cn=admin,ou=perconadba,dc=ldap,dc=local&quot;</span><span class="p">,</span>
-<span class="w"> </span><span class="err">privileges</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span>
-<span class="w"> </span><span class="err">roles</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">   </span><span class="p">{</span>
-<span class="w">     </span><span class="nt">&quot;role&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;readAnyDatabase&quot;</span><span class="p">,</span>
-<span class="w">     </span><span class="nt">&quot;db&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;admin&quot;</span>
-<span class="w">   </span><span class="p">},</span>
-<span class="w">   </span><span class="p">{</span>
-<span class="w">     </span><span class="nt">&quot;role&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;dbAdminAnyDatabase&quot;</span><span class="p">,</span>
-<span class="w">     </span><span class="nt">&quot;db&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;admin&quot;</span>
-<span class="w">   </span><span class="p">},</span>
-<span class="w">   </span><span class="p">{</span>
-<span class="w">     </span><span class="nt">&quot;role&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;clusterMonitor&quot;</span><span class="p">,</span>
-<span class="w">     </span><span class="nt">&quot;db&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;admin&quot;</span>
-<span class="w">   </span><span class="p">},</span>
-<span class="w">   </span><span class="p">{</span>
-<span class="w">     </span><span class="nt">&quot;role&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;readWriteAnyDatabase&quot;</span><span class="p">,</span>
-<span class="w">     </span><span class="nt">&quot;db&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;admin&quot;</span>
-<span class="w">   </span><span class="p">},</span>
-<span class="w">   </span><span class="p">{</span>
-<span class="w">     </span><span class="nt">&quot;role&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;restore&quot;</span><span class="p">,</span>
-<span class="w">     </span><span class="nt">&quot;db&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;admin&quot;</span>
-<span class="w">   </span><span class="p">},</span>
-<span class="w">   </span><span class="p">{</span>
-<span class="w">     </span><span class="nt">&quot;role&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;backup&quot;</span><span class="p">,</span>
-<span class="w">     </span><span class="nt">&quot;db&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;admin&quot;</span>
-<span class="w">   </span><span class="p">}</span>
-<span class="w"> </span><span class="p">],</span>
+<span class="nx">role</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;cn=admin,ou=perconadba,dc=ldap,dc=local&quot;</span><span class="p">,</span>
+<span class="nx">privileges</span><span class="o">:</span><span class="w"> </span><span class="p">[],</span>
+<span class="nx">roles</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="p">{</span>
+<span class="w">    </span><span class="s2">&quot;role&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;readAnyDatabase&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;db&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;admin&quot;</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="p">{</span>
+<span class="w">    </span><span class="s2">&quot;role&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;dbAdminAnyDatabase&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;db&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;admin&quot;</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="p">{</span>
+<span class="w">    </span><span class="s2">&quot;role&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;clusterMonitor&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;db&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;admin&quot;</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="p">{</span>
+<span class="w">    </span><span class="s2">&quot;role&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;readWriteAnyDatabase&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;db&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;admin&quot;</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="p">{</span>
+<span class="w">    </span><span class="s2">&quot;role&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;restore&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;db&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;admin&quot;</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="p">{</span>
+<span class="w">    </span><span class="s2">&quot;role&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;backup&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;db&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;admin&quot;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">],</span>
 <span class="p">}</span>
-<span class="err">)</span>
+<span class="p">)</span>
 </code></pre></div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Extra roles listed in the above example are just to show more than one possible variant.</p>
-</div>
+<p>!!! note</p>
+<div class="highlight"><pre><span></span><code>  Extra roles listed in the above example are just to show more than one possible variant.
+</code></pre></div>
+</li>
+<li>
 <p>Now the new <code>percona</code> user created inside OpenLDAP is able to login to MongoDB as administrator. Verify whether the user role has been identified correctly with the following command:</p>
 <div class="highlight"><pre><span></span><code>mongo<span class="w"> </span>--username<span class="w"> </span>percona<span class="w"> </span>--password<span class="w"> </span><span class="s1">&#39;percona&#39;</span><span class="w"> </span>--authenticationMechanism<span class="w"> </span><span class="s1">&#39;PLAIN&#39;</span><span class="w"> </span>--authenticationDatabase<span class="w"> </span><span class="s1">&#39;$external&#39;</span><span class="w"> </span>--host<span class="w"> </span>&lt;your_cluster_name&gt;-mongos<span class="w"> </span>--port<span class="w"> </span><span class="m">27017</span>
 </code></pre></div>
 <p>When logged in, execute the following:</p>
-<div class="highlight" data-prompt="mongos>"><pre><span></span><code><span class="err">mo</span><span class="kc">n</span><span class="err">gos&gt;</span><span class="w"> </span><span class="err">db.ru</span><span class="kc">n</span><span class="err">Comma</span><span class="kc">n</span><span class="err">d(</span><span class="p">{</span><span class="err">co</span><span class="kc">nne</span><span class="err">c</span><span class="kc">t</span><span class="err">io</span><span class="kc">n</span><span class="err">S</span><span class="kc">tatus</span><span class="p">:</span><span class="mi">1</span><span class="p">}</span><span class="err">)</span>
+<div class="highlight" data-prompt="mongos>"><pre><span></span><code><span class="nx">mongos</span><span class="o">&gt;</span><span class="w"> </span><span class="nx">db</span><span class="p">.</span><span class="nx">runCommand</span><span class="p">({</span><span class="nx">connectionStatus</span><span class="o">:</span><span class="mf">1</span><span class="p">})</span>
 </code></pre></div>
-<p>The output should be like follows:</p>
+<details class="example">
+<summary>Sample output</summary>
 <div class="highlight" data-prompt="mongos>"><pre><span></span><code><span class="p">{</span>
-<span class="w"> </span><span class="nt">&quot;authInfo&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">   </span><span class="nt">&quot;authenticatedUsers&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">     </span><span class="p">{</span>
-<span class="w">       </span><span class="nt">&quot;user&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;percona&quot;</span><span class="p">,</span>
-<span class="w">       </span><span class="nt">&quot;db&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;$external&quot;</span>
-<span class="w">     </span><span class="p">}</span>
-<span class="w">   </span><span class="p">],</span>
-<span class="w">   </span><span class="nt">&quot;authenticatedUserRoles&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">     </span><span class="p">{</span>
-<span class="w">       </span><span class="nt">&quot;role&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;restore&quot;</span><span class="p">,</span>
-<span class="w">       </span><span class="nt">&quot;db&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;admin&quot;</span>
-<span class="w">     </span><span class="p">},</span>
-<span class="w">     </span><span class="p">{</span>
-<span class="w">       </span><span class="nt">&quot;role&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;readAnyDatabase&quot;</span><span class="p">,</span>
-<span class="w">       </span><span class="nt">&quot;db&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;admin&quot;</span>
-<span class="w">     </span><span class="p">},</span>
-<span class="w">     </span><span class="p">{</span>
-<span class="w">       </span><span class="nt">&quot;role&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;clusterMonitor&quot;</span><span class="p">,</span>
-<span class="w">       </span><span class="nt">&quot;db&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;admin&quot;</span>
-<span class="w">     </span><span class="p">},</span>
-<span class="w">     </span><span class="p">{</span>
-<span class="w">       </span><span class="nt">&quot;role&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;dbAdminAnyDatabase&quot;</span><span class="p">,</span>
-<span class="w">       </span><span class="nt">&quot;db&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;admin&quot;</span>
-<span class="w">     </span><span class="p">},</span>
-<span class="w">     </span><span class="p">{</span>
-<span class="w">       </span><span class="nt">&quot;role&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;backup&quot;</span><span class="p">,</span>
-<span class="w">       </span><span class="nt">&quot;db&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;admin&quot;</span>
-<span class="w">     </span><span class="p">},</span>
-<span class="w">     </span><span class="p">{</span>
-<span class="w">       </span><span class="nt">&quot;role&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cn=admin,ou=perconadba,dc=ldap,dc=local&quot;</span><span class="p">,</span>
-<span class="w">       </span><span class="nt">&quot;db&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;admin&quot;</span>
-<span class="w">     </span><span class="p">},</span>
-<span class="w">     </span><span class="p">{</span>
-<span class="w">       </span><span class="nt">&quot;role&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;readWriteAnyDatabase&quot;</span><span class="p">,</span>
-<span class="w">       </span><span class="nt">&quot;db&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;admin&quot;</span>
-<span class="w">     </span><span class="p">}</span>
-<span class="w">   </span><span class="p">]</span>
-<span class="w"> </span><span class="p">},</span>
-<span class="w"> </span><span class="nt">&quot;ok&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
-<span class="w"> </span><span class="nt">&quot;$clusterTime&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">   </span><span class="nt">&quot;clusterTime&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="err">Times</span><span class="kc">ta</span><span class="err">mp(</span><span class="mi">1663067287</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="err">)</span><span class="p">,</span>
-<span class="w">   </span><span class="nt">&quot;signature&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">     </span><span class="nt">&quot;hash&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="err">Bi</span><span class="kc">n</span><span class="err">Da</span><span class="kc">ta</span><span class="err">(</span><span class="mi">0</span><span class="p">,</span><span class="s2">&quot;ZaLGSVj4ZwZrngXZSOqXB5rx+oo=&quot;</span><span class="err">)</span><span class="p">,</span>
-<span class="w">     </span><span class="nt">&quot;keyId&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="err">NumberLo</span><span class="kc">n</span><span class="err">g(</span><span class="s2">&quot;7142816031004688408&quot;</span><span class="err">)</span>
-<span class="w">   </span><span class="p">}</span>
-<span class="w"> </span><span class="p">},</span>
-<span class="w"> </span><span class="nt">&quot;operationTime&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="err">Times</span><span class="kc">ta</span><span class="err">mp(</span><span class="mi">1663067287</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="err">)</span>
+<span class="nt">&quot;authInfo&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;authenticatedUsers&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;user&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;percona&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;db&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;$external&quot;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;authenticatedUserRoles&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;role&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;restore&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;db&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;admin&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;role&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;readAnyDatabase&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;db&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;admin&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;role&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;clusterMonitor&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;db&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;admin&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;role&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;dbAdminAnyDatabase&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;db&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;admin&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;role&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;backup&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;db&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;admin&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;role&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cn=admin,ou=perconadba,dc=ldap,dc=local&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;db&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;admin&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;role&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;readWriteAnyDatabase&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;db&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;admin&quot;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">},</span>
+<span class="nt">&quot;ok&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="nt">&quot;$clusterTime&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;clusterTime&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="err">Times</span><span class="kc">ta</span><span class="err">mp(</span><span class="mi">1663067287</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="err">)</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;signature&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;hash&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="err">Bi</span><span class="kc">n</span><span class="err">Da</span><span class="kc">ta</span><span class="err">(</span><span class="mi">0</span><span class="p">,</span><span class="s2">&quot;ZaLGSVj4ZwZrngXZSOqXB5rx+oo=&quot;</span><span class="err">)</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;keyId&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="err">NumberLo</span><span class="kc">n</span><span class="err">g(</span><span class="s2">&quot;7142816031004688408&quot;</span><span class="err">)</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">},</span>
+<span class="nt">&quot;operationTime&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="err">Times</span><span class="kc">ta</span><span class="err">mp(</span><span class="mi">1663067287</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="err">)</span>
 <span class="p">}</span>
 <span class="err">mo</span><span class="kc">n</span><span class="err">gos&gt;</span>
 </code></pre></div>
+</details>
+</li>
+</ol>
+<h2 id="oidc-authentication-and-ldap-authorization">OIDC authentication and LDAP authorization<a class="headerlink" href="#oidc-authentication-and-ldap-authorization" title="Permanent link">&para;</a></h2>
+<p>A configuration file provided via a Secret takes precedence over Custom Resource settings (<code>spec.configuration</code>).</p>
+<p>If you use <a href="oidc.html">OIDC authentication</a> with LDAP authorization, merge both setups in one place — either in the Secret or in the Custom Resource — so one configuration does not overwrite the other. In this case, also update the authentication mechanisms to include <code>MONGODB-OIDC</code>.</p>
 <h2 id="using-ldap-over-tls-connection">Using LDAP over TLS connection<a class="headerlink" href="#using-ldap-over-tls-connection" title="Permanent link">&para;</a></h2>
 <p><a href="https://www.openldap.org/faq/data/cache/185.html">LDAP over TLS  <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2m6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.042-.018.75.75 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1"/></svg></span></a> allows you to use Transport Layer Security, encrypting your communication between MongoDB and OpenLDAP server.</p>
 <p>Here are the needed modifications to <a href="https://docs.percona.com/percona-operator-for-mongodb/ldap.html#the-mongodb-and-operator-side">The MongoDB and Operator side</a> subsection which will enable it:</p>
@@ -6947,58 +7966,53 @@ window.addEventListener('afterprint', (event) => {
 </li>
 <li>
 <p>It is also necessary to change the value of transportSecurity to <code>tls</code> in mongod and mongos configurations. The configuration is similar to one described at the <a href="https://docs.percona.com/percona-operator-for-mongodb/ldap.html#the-mongodb-and-operator-side">The MongoDB and Operator side</a> subsection:</p>
+<p>Changed mongod configuration should look as follows:</p>
+<div class="highlight"><span class="filename">my_mongod.conf</span><pre><span></span><code><span class="nt">security</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">authorization</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;enabled&quot;</span>
+<span class="w">  </span><span class="nt">ldap</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">authz</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">queryTemplate</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;{USER}?memberOf?base&#39;</span>
+<span class="w">    </span><span class="nt">servers</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;openldap&quot;</span>
+<span class="hll"><span class="w">    </span><span class="nt">transportSecurity</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tls</span>
+</span><span class="w">    </span><span class="nt">bind</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">queryUser</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;cn=readonly,dc=ldap,dc=local&quot;</span>
+<span class="w">      </span><span class="nt">queryPassword</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;password&quot;</span>
+<span class="w">    </span><span class="nt">userToDNMapping</span><span class="p">:</span>
+<span class="w">      </span><span class="s">&#39;[</span>
+<span class="w">          </span><span class="s">{</span>
+<span class="w">            </span><span class="s">match</span><span class="nv"> </span><span class="s">:</span><span class="nv"> </span><span class="s">&quot;(.+)&quot;,</span>
+<span class="w">            </span><span class="s">ldapQuery:</span><span class="nv"> </span><span class="s">&quot;OU=perconadba,DC=ldap,DC=local??sub?(uid={0})&quot;</span>
+<span class="w">          </span><span class="s">}</span>
+<span class="w">   </span><span class="s">]&#39;</span>
+<span class="nt">setParameter</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">authenticationMechanisms</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;PLAIN,SCRAM-SHA-256&#39;</span>
+</code></pre></div>
+<p>If <strong>sharding is on</strong>, you will also need to change mongos configuration:</p>
+<div class="highlight"><span class="filename">my_mongos.conf</span><pre><span></span><code><span class="nt">security</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">ldap</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">servers</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;openldap&quot;</span>
+<span class="hll"><span class="w">    </span><span class="nt">transportSecurity</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tls</span>
+</span><span class="w">    </span><span class="nt">bind</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">queryUser</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;cn=readonly,dc=ldap,dc=local&quot;</span>
+<span class="w">      </span><span class="nt">queryPassword</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;password&quot;</span>
+<span class="w">    </span><span class="nt">userToDNMapping</span><span class="p">:</span>
+<span class="w">      </span><span class="s">&#39;[</span>
+<span class="w">          </span><span class="s">{</span>
+<span class="w">            </span><span class="s">match</span><span class="nv"> </span><span class="s">:</span><span class="nv"> </span><span class="s">&quot;(.+)&quot;,</span>
+<span class="w">            </span><span class="s">ldapQuery:</span><span class="nv"> </span><span class="s">&quot;OU=perconadba,DC=ldap,DC=local??sub?(uid={0})&quot;</span>
+<span class="w">          </span><span class="s">}</span>
+<span class="w">    </span><span class="s">]&#39;</span>
+<span class="nt">setParameter</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">authenticationMechanisms</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;PLAIN,SCRAM-SHA-256&#39;</span>
+</code></pre></div>
 </li>
 </ol>
-<p>Changed mongod configuration should look as follows:</p>
-<div class="highlight"><pre><span></span><code>``` yaml title=&quot;my_mongod.conf&quot;  hl_lines=&quot;7&quot;
-security:
-  authorization: &quot;enabled&quot;
-  ldap:
-    authz:
-      queryTemplate: &#39;{USER}?memberOf?base&#39;
-    servers: &quot;openldap&quot;
-    transportSecurity: tls
-    bind:
-      queryUser: &quot;cn=readonly,dc=ldap,dc=local&quot;
-      queryPassword: &quot;password&quot;
-    userToDNMapping:
-      &#39;[
-          {
-            match : &quot;(.+)&quot;,
-            ldapQuery: &quot;OU=perconadba,DC=ldap,DC=local??sub?(uid={0})&quot;
-          }
-   ]&#39;
-setParameter:
-  authenticationMechanisms: &#39;PLAIN,SCRAM-SHA-1&#39;
-```
-
-If **sharding is on**, you will also need to change mongos configuration:
-
-```yaml title=&quot;my_mongos.conf&quot; hl_lines=&quot;4&quot;
-security:
-  ldap:
-    servers: &quot;openldap&quot;
-    transportSecurity: tls
-    bind:
-      queryUser: &quot;cn=readonly,dc=ldap,dc=local&quot;
-      queryPassword: &quot;password&quot;
-    userToDNMapping:
-      &#39;[
-          {
-            match : &quot;(.+)&quot;,
-            ldapQuery: &quot;OU=perconadba,DC=ldap,DC=local??sub?(uid={0})&quot;
-          }
-    ]&#39;
-setParameter:
-  authenticationMechanisms: &#39;PLAIN,SCRAM-SHA-1&#39;
-```
-</code></pre></div>
 <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="January 12, 2026 17:49:48 UTC">January 12, 2026</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 23, 2026 18:27:38 UTC">July 23, 2026</span>
       
         <br>
         Created:

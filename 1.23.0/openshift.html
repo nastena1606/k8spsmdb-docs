@@ -106,8 +106,8 @@
                  
                  <meta property="og:type" content="website" />
                  <meta property="og:title" content="Percona Operator for MongoDB - Install on OpenShift" />
-                 <meta property="og:image" content="https://docs.percona.com/percona-operator-for-mongodb/assets/images/kubernetes-operators.png">
-                 <meta property="og:url" content="https://docs.percona.com/percona-operator-for-mongodb/">
+                 <meta property="og:image" content="https://docs.percona.com/percona-operator-for-mongodb/latest/assets/images/kubernetes-operators.png">
+                 <meta property="og:url" content="https://docs.percona.com/percona-operator-for-mongodb/latest/index.html">
                 </head>
                 <body>
                 </body>
@@ -542,6 +542,34 @@
     
   
     Comparison with other solutions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="limitations.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Known limitations
   
 
     
@@ -1119,6 +1147,34 @@
   
   
     <li class="md-nav__item">
+      <a href="rke2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Install on Rancher Kubernetes Engine (RKE2)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="kubernetes.html" class="md-nav__link">
         
   
@@ -1207,18 +1263,28 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#install-the-operator" class="md-nav__link">
+  <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Install the Operator
+        Prerequisites
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Install the Operator">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#before-you-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Before you start
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#install-the-operator-via-the-operator-lifecycle-manager-olm" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1227,9 +1293,26 @@
     </span>
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="Install the Operator via the Operator Lifecycle Manager (OLM)">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#deploy-percona-server-for-mongodb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deploy Percona Server for MongoDB
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#install-the-operator-via-the-command-line-interface" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1237,6 +1320,101 @@
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Install the Operator via the command-line interface">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quick-install" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick install
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-by-step-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step-by-step installation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step-by-step installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-clone-the-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1: Clone the repository
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-create-the-custom-resource-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2: Create the Custom Resource Definition
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-optional-set-up-user-permissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3: (optional) Set up user permissions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-create-a-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4: Create a project
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5-configure-rbac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5: Configure RBAC
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-6-deploy-the-operator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6: Deploy the Operator
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -1254,13 +1432,63 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Install Percona Server for MongoDB">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-configure-secrets-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1: Configure secrets (optional)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-configure-certificates-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2: Configure certificates (optional)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-deploy-the-database-cluster" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3: Deploy the database cluster
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#verifying-the-cluster-operation" class="md-nav__link">
+  <a href="#verify-the-cluster-operation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Verifying the cluster operation
+        Verify the cluster operation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#connect-manually-alternative" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Connect manually (alternative)
       
     </span>
   </a>
@@ -1939,6 +2167,34 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="connection-secrets.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Connection secrets
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
     
     
     
@@ -1948,10 +2204,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_1_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_1_5" >
         
           
-          <label class="md-nav__link" for="__nav_7_1_4" id="__nav_7_1_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7_1_5" id="__nav_7_1_5_label" tabindex="0">
             
   
   
@@ -1969,8 +2225,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_1_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_1_4">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_1_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_1_5">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2058,6 +2314,109 @@
   
   
   
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Authentication
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Authentication
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ldap.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OpenLDAP integration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="oidc.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OIDC authentication
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
       <a href="auth-disable.html" class="md-nav__link">
         
@@ -2075,6 +2434,42 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="auth-bypass-localhost.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Disable localhost authentication bypass
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -2478,6 +2873,34 @@
     
   
     Update certificates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tls-cert-management-policy.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configure the TLS certificate management policy
   
 
     
@@ -3323,6 +3746,62 @@
   
   
     <li class="md-nav__item">
+      <a href="backups-storage-oss.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Alibaba Cloud OSS storage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="backups-storage-oci.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Oracle Cloud Infrastructure Object Storage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="backups-storage-filesystem.html" class="md-nav__link">
         
   
@@ -3433,7 +3912,7 @@
   <span class="md-ellipsis">
     
   
-    Make a backup
+    PVC snapshot backups
   
 
     
@@ -3446,6 +3925,145 @@
         
         <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_1_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8_1_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    PVC snapshot backups
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="backups-pvc-snapshots.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="backups-pvc-setup.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configure PVC snapshots
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="backups-pvc-usage.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Use PVC snapshots
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_1_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_1_6" id="__nav_8_1_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Make a backup
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_1_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_1_6">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -3562,10 +4180,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_1_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_1_8" >
         
           
-          <label class="md-nav__link" for="__nav_8_1_7" id="__nav_8_1_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_8_1_8" id="__nav_8_1_8_label" tabindex="0">
             
   
   
@@ -3583,8 +4201,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_1_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8_1_7">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_1_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_1_8">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -3665,6 +4283,34 @@
     
   
     On a new cluster with different replica set names
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="backups-restore-new-name.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Restore a collection under a different name
   
 
     
@@ -4257,6 +4903,117 @@
   
   
   
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_4" id="__nav_8_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Real-time replication with Percona ClusterSync for MongoDB
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Real-time replication with Percona ClusterSync for MongoDB
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="clustersync.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About PCSM integration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="clustersync-setup.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Set up and use PCSM
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
       <a href="monitoring.html" class="md-nav__link">
         
@@ -4395,7 +5152,7 @@
   <span class="md-ellipsis">
     
   
-    Troubleshooting
+    Search and Vector search
   
 
     
@@ -4408,6 +5165,116 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Search and Vector search
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="search-overview.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About full-text and vector search
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="search-setup.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configure search and vector search
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Troubleshooting
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -4536,6 +5403,34 @@
   
   
     <li class="md-nav__item">
+      <a href="debug-backup-restore.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Troubleshoot backups and restores
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="debug-images.html" class="md-nav__link">
         
   
@@ -4607,10 +5502,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
         
           
-          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
             
   
   
@@ -4628,8 +5523,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_10">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -4654,34 +5549,6 @@
     
   
     Install the database with customized parameters
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="ldap.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    OpenLDAP integration
   
 
     
@@ -4870,34 +5737,6 @@
   
   
     <li class="md-nav__item">
-      <a href="image-query.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Retrieve Percona certified images
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="delete.html" class="md-nav__link">
         
   
@@ -4941,10 +5780,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
         
           
-          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
             
   
   
@@ -4962,12 +5801,59 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_11">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
             <span class="md-nav__icon md-icon"></span>
             
   
     Reference
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_12_1" id="__nav_12_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Custom Resource reference
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_12_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Custom Resource reference
   
 
           </label>
@@ -4987,7 +5873,7 @@
   <span class="md-ellipsis">
     
   
-    Custom Resource options
+    PerconaServerMongoDB options
   
 
     
@@ -5015,7 +5901,7 @@
   <span class="md-ellipsis">
     
   
-    Backup Resource options
+    Backup options
   
 
     
@@ -5043,7 +5929,7 @@
   <span class="md-ellipsis">
     
   
-    Restore Resource options
+    Restore options
   
 
     
@@ -5052,6 +5938,42 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="clustersync-options.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ClusterSync options
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -5091,6 +6013,53 @@
   
   
   
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_12_3" id="__nav_12_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Certified images
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_12_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Certified images
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
       <a href="images.html" class="md-nav__link">
         
@@ -5108,6 +6077,42 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="image-query.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Retrieve Percona certified images
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -5203,6 +6208,53 @@
   
   
   
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_12_7" id="__nav_12_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Legal
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_12_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Legal
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
       <a href="copyright.html" class="md-nav__link">
         
@@ -5253,6 +6305,42 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="legal-notice.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Legal Notice
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -5275,10 +6363,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13" >
         
           
-          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_13" id="__nav_13_label" tabindex="0">
             
   
   
@@ -5296,8 +6384,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_12">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_13">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -5322,6 +6410,34 @@
     
   
     Release notes index
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="RN/Kubernetes-Operator-for-PSMONGODB-RN1.23.0.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Percona Operator for MongoDB 1.23.0 (2026-07-23)
   
 
     
@@ -6481,18 +7597,28 @@ box-shadow: 0 1px 3px rgba(0,0,0,0.2);
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#install-the-operator" class="md-nav__link">
+  <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Install the Operator
+        Prerequisites
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Install the Operator">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#before-you-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Before you start
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#install-the-operator-via-the-operator-lifecycle-manager-olm" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -6501,9 +7627,26 @@ box-shadow: 0 1px 3px rgba(0,0,0,0.2);
     </span>
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="Install the Operator via the Operator Lifecycle Manager (OLM)">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#deploy-percona-server-for-mongodb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deploy Percona Server for MongoDB
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#install-the-operator-via-the-command-line-interface" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -6511,6 +7654,101 @@ box-shadow: 0 1px 3px rgba(0,0,0,0.2);
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Install the Operator via the command-line interface">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quick-install" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick install
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-by-step-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step-by-step installation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step-by-step installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-clone-the-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1: Clone the repository
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-create-the-custom-resource-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2: Create the Custom Resource Definition
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-optional-set-up-user-permissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3: (optional) Set up user permissions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-create-a-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4: Create a project
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5-configure-rbac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5: Configure RBAC
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-6-deploy-the-operator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6: Deploy the Operator
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -6528,13 +7766,63 @@ box-shadow: 0 1px 3px rgba(0,0,0,0.2);
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Install Percona Server for MongoDB">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-configure-secrets-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1: Configure secrets (optional)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-configure-certificates-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2: Configure certificates (optional)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-deploy-the-database-cluster" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3: Deploy the database cluster
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#verifying-the-cluster-operation" class="md-nav__link">
+  <a href="#verify-the-cluster-operation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Verifying the cluster operation
+        Verify the cluster operation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#connect-manually-alternative" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Connect manually (alternative)
       
     </span>
   </a>
@@ -6596,120 +7884,191 @@ window.addEventListener('afterprint', (event) => {
 
 <h1 id="install-percona-server-for-mongodb-on-openshift">Install Percona Server for MongoDB on OpenShift<a class="headerlink" href="#install-percona-server-for-mongodb-on-openshift" title="Permanent link">&para;</a></h1>
 <p>Percona Operator for Percona Server for MongoDB is a <a href="https://connect.redhat.com/en/partner-with-us/red-hat-openshift-certification">Red Hat Certified Operator  <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2m6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.042-.018.75.75 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1"/></svg></span></a>. This means that Percona Operator is portable across hybrid clouds and fully supports the Red Hat OpenShift lifecycle.</p>
-<p>Installing Percona Server for MongoDB on OpenShift includes two steps:</p>
+<p>To install Percona Server for MongoDB on OpenShift means:</p>
 <ul>
-<li>Installing the Percona Operator for MongoDB,</li>
+<li>Install the Percona Operator for MongoDB Deployment,</li>
 <li>Install Percona Server for MongoDB using the Operator.</li>
 </ul>
-<h2 id="install-the-operator">Install the Operator<a class="headerlink" href="#install-the-operator" title="Permanent link">&para;</a></h2>
-<p>You can install Percona Operator for MongoDB on OpenShift using the web interface (the <a href="https://docs.redhat.com/en/documentation/openshift_container_platform/4.2/html/operators/understanding-the-operator-lifecycle-manager-olm#olm-overview_olm-understanding-olm">Operator Lifecycle Manager <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2m6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.042-.018.75.75 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1"/></svg></span></a>), or using the command line interface.</p>
-<h3 id="install-the-operator-via-the-operator-lifecycle-manager-olm">Install the Operator via the Operator Lifecycle Manager (OLM)<a class="headerlink" href="#install-the-operator-via-the-operator-lifecycle-manager-olm" title="Permanent link">&para;</a></h3>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
+<ul>
+<li>OpenShift cluster with administrative access</li>
+<li><code>oc</code> command-line tool installed</li>
+<li>Git client installed</li>
+</ul>
+<h2 id="before-you-start">Before you start<a class="headerlink" href="#before-you-start" title="Permanent link">&para;</a></h2>
+<p>Check the <a href="System-Requirements.html">System Requirements</a> to ensure your environment meets the necessary prerequisites.</p>
+<p>You can install Percona Operator for MongoDB on OpenShift using either:</p>
+<ul>
+<li>The <a href="https://docs.redhat.com/en/documentation/openshift_container_platform/4.2/html/operators/understanding-the-operator-lifecycle-manager-olm#olm-overview_olm-understanding-olm">Operator Lifecycle Manager <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2m6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.042-.018.75.75 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1"/></svg></span></a> web interface</li>
+<li>The command-line interface</li>
+</ul>
+<p>Choose the method that best suits your needs. The web interface is recommended for beginners, while the CLI method offers more control and automation capabilities.</p>
+<h2 id="install-the-operator-via-the-operator-lifecycle-manager-olm">Install the Operator via the Operator Lifecycle Manager (OLM)<a class="headerlink" href="#install-the-operator-via-the-operator-lifecycle-manager-olm" title="Permanent link">&para;</a></h2>
 <p>Operator Lifecycle Manager (OLM) is a part of the <a href="https://github.com/operator-framework">Operator Framework <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2m6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.042-.018.75.75 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1"/></svg></span></a> that allows you to install, update, and manage the Operators lifecycle on the OpenShift platform.</p>
-<p>Following steps will allow you to deploy the Operator and Percona Server for MongoDB on your OLM installation:</p>
 <ol>
+<li>Login to the OpenShift console.</li>
+<li>Navigate to Ecosystem -&gt; Software Catalog</li>
 <li>
-<p>Login to the OLM and click the needed Operator on the OperatorHub page:</p>
+<p>Search for &ldquo;Percona Distribution for MongoDB Operator&rdquo; and click the needed Operator on the OperatorHub page. You may need to change the project for your user::</p>
 <p><img alt="image" src="assets/images/olm1.svg" /></p>
+</li>
+<li>
 <p>Then click &ldquo;Continue&rdquo;, and &ldquo;Install&rdquo;.</p>
 </li>
 <li>
-<p>A new page will allow you to choose the Operator version and the Namespace / OpenShift project you would like to install the Operator into. </p>
+<p>A new page opens where you choose the Operator version and the Namespace / OpenShift project you would like to install the Operator into. You can create a namespace (an OpenShift project) right away by clicking the <strong>Create Project</strong> and filling in project details like name, display name and description.</p>
 <p><img alt="image" src="assets/images/olm2.svg" /></p>
-<p>Click &ldquo;Install&rdquo; button to actually install the Operator.</p>
 </li>
 <li>
-<p>When the installation finishes, you can deploy your MongoDB cluster. In the &ldquo;Operator Details&rdquo; you will see Provided APIs (Custom Resources, available for installation). Click &ldquo;Create instance&rdquo; for the <code>PerconaServerMongoDB</code> Custom Resource. </p>
-<p><img alt="image" src="assets/images/olm3.svg" /></p>
-<p>You will be able to edit manifest to set needed Custom Resource options, and then click &ldquo;Create&rdquo; button to deploy your database cluster.</p>
+<p>Click &ldquo;Install&rdquo;.</p>
 </li>
 </ol>
-<h3 id="install-the-operator-via-the-command-line-interface">Install the Operator via the command-line interface<a class="headerlink" href="#install-the-operator-via-the-command-line-interface" title="Permanent link">&para;</a></h3>
+<p>You can track the install process on the Installed Operators page. The Operator should report the <code>Succeeded</code> status.</p>
+<h3 id="deploy-percona-server-for-mongodb">Deploy Percona Server for MongoDB<a class="headerlink" href="#deploy-percona-server-for-mongodb" title="Permanent link">&para;</a></h3>
+<p>Now you can deploy Percona Server for MongoDB.</p>
+<ol>
+<li>Click the Operator you installed.</li>
+<li>
+<p>On the <strong>Details</strong> page, find the <code>PerconaServerMongoDB</code> Custom Resource.</p>
+<p><img alt="image" src="assets/images/olm3.svg" /></p>
+</li>
+<li>
+<p>Click “Create instance”</p>
+</li>
+<li>
+<p>Edit the Custom Resource manifest to fine-tune your cluster configuration. Refer to <a href="operator.html">Custom Resource reference</a> for the description of available options.</p>
+<p><img alt="image" src="assets/images/olm3-cr.svg" /></p>
+</li>
+<li>
+<p>Click &ldquo;Create&rdquo;</p>
+</li>
+<li>
+<p>Upon successful installation, you should see the “Ready” status for the database cluster.</p>
+</li>
+</ol>
+<h2 id="install-the-operator-via-the-command-line-interface">Install the Operator via the command-line interface<a class="headerlink" href="#install-the-operator-via-the-command-line-interface" title="Permanent link">&para;</a></h2>
+<p>The following steps install the latest version of the Operator with default parameters. To install a specific version, replace the <code>v1.23.0</code> tag with your value. See the full list of tags <a href="https://github.com/percona/percona-server-mongodb-operator/tags">in the Operator repository <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2m6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.042-.018.75.75 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1"/></svg></span></a> on GitHub.</p>
+<p>To install the Operator with customized parameters, see <a href="custom-install.html">Install Percona Server for MongoDB with customized parameters</a>.</p>
+<p>Choose the approach that fits your needs:</p>
+<ul>
+<li><a href="#quick-install"><strong>Quick install</strong></a> — Apply a single bundle file. Use this when you want to get started quickly with default settings.</li>
+<li><a href="#step-by-step-installation"><strong>Step-by-step install</strong></a> — Run each installation step separately. Use this when you want more control over the installation process or you need to customize the installation.</li>
+</ul>
+<h3 id="quick-install">Quick install<a class="headerlink" href="#quick-install" title="Permanent link">&para;</a></h3>
 <ol>
 <li>
-<p>Clone the percona-server-mongodb-operator repository:</p>
+<p>Clone the <code>percona-server-mongodb-operator</code> repository and change the directory to <code>percona-server-mongodb-operator</code>.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>You must specify the correct branch with the <code>-b</code> option while cloning the code on this step. Please be careful.</p>
+</div>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>-b<span class="w"> </span>v1.23.0<span class="w"> </span>https://github.com/percona/percona-server-mongodb-operator
 <span class="nb">cd</span><span class="w"> </span>percona-server-mongodb-operator
 </code></pre></div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>It is crucial to specify the right branch with <code>-b</code>
-option while cloning the code on this step. Please be careful.</p>
-</div>
 </li>
 <li>
-<p>The Custom Resource Definition for Percona Server for MongoDB should be
-    created from the <code>deploy/crd.yaml</code> file. The Custom Resource Definition
-    extends the standard set of resources which Kubernetes “knows” about with the
-    new items, in our case these items are the core of the operator.</p>
-<p>This step should be done only once; it does not need to be repeated with other deployments.</p>
-<p><a href="https://kubernetes.io/docs/reference/using-api/server-side-apply/">Apply it  <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2m6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.042-.018.75.75 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1"/></svg></span></a>
-as follows:</p>
+<p>Create the Kubernetes namespace for your cluster. It is a good practice to isolate workloads in Kubernetes by installing the Operator in a custom namespace. Replace the <code>&lt;namespace&gt;</code> placeholder with your value.</p>
+<div class="highlight"><pre><span></span><code>oc<span class="w"> </span>create<span class="w"> </span>namespace<span class="w"> </span>&lt;namespace&gt;
+</code></pre></div>
+<details class="example">
+<summary>Expected output</summary>
+<div class="no-copy highlight"><pre><span></span><code>namespace/&lt;namespace&gt; was created
+</code></pre></div>
+</details>
+</li>
+<li>
+<p>A <code>bundle.yaml</code> is a Kubernetes manifest that packages Operator metadata and resources. By applying this file, Kubernetes creates the Custom Resource Definition, sets up role-based access control and installs the Operator in one single action. Replace the <code>&lt;namespace&gt;</code> placeholder with your value:</p>
+<div class="highlight"><pre><span></span><code>oc<span class="w"> </span>apply<span class="w"> </span>--server-side<span class="w"> </span>-f<span class="w"> </span>deploy/bundle.yaml<span class="w"> </span>-n<span class="w"> </span>&lt;namespace&gt;
+</code></pre></div>
+<details class="example">
+<summary>Expected output</summary>
+<div class="no-copy highlight"><pre><span></span><code>customresourcedefinition.apiextensions.k8s.io/perconaservermongodbs.psmdb.percona.com serverside-applied
+customresourcedefinition.apiextensions.k8s.io/perconaservermongodbbackups.psmdb.percona.com serverside-applied
+customresourcedefinition.apiextensions.k8s.io/perconaservermongodbrestores.psmdb.percona.com serverside-applied
+customresourcedefinition.apiextensions.k8s.io/perconaservermongodbclustersyncs.psmdb.percona.com serverside-applied
+role.rbac.authorization.k8s.io/percona-server-mongodb-operator serverside-applied
+serviceaccount/percona-server-mongodb-operator serverside-applied
+rolebinding.rbac.authorization.k8s.io/service-account-percona-server-mongodb-operator serverside-applied
+deployment.apps/percona-server-mongodb-operator serverside-applied
+</code></pre></div>
+</details>
+</li>
+</ol>
+<h3 id="step-by-step-installation">Step-by-step installation<a class="headerlink" href="#step-by-step-installation" title="Permanent link">&para;</a></h3>
+<p>This section splits the installation flow into separate steps giving you more control over the process.</p>
+<h4 id="step-1-clone-the-repository">Step 1: Clone the repository<a class="headerlink" href="#step-1-clone-the-repository" title="Permanent link">&para;</a></h4>
+<p>Use the following commands to clone the <code>percona-server-mongodb-operator</code> repository and change the directory to <code>percona-server-mongodb-operator</code>.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>You must specify the correct branch with the <code>-b</code> option while cloning the code on this step. Please be careful.</p>
+</div>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>-b<span class="w"> </span>v1.23.0<span class="w"> </span>https://github.com/percona/percona-server-mongodb-operator
+<span class="nb">cd</span><span class="w"> </span>percona-server-mongodb-operator
+</code></pre></div>
+<h4 id="step-2-create-the-custom-resource-definition">Step 2: Create the Custom Resource Definition<a class="headerlink" href="#step-2-create-the-custom-resource-definition" title="Permanent link">&para;</a></h4>
+<p>At this step you must create the Custom Resource Definition for Percona Operator for MongoDB from the <code>deploy/crd.yaml</code> file.</p>
+<p>The Custom Resource Definition extends the standard set of resources which Kubernetes “knows” about with new items.</p>
+<p>You create the Custom Resource Definition only once. It is not bound to a specific namespace and all other deployments will use this Custom Resource Definition.</p>
+<p>Use the following command to create the Custom Resource Definition:</p>
 <div class="highlight"><pre><span></span><code>oc<span class="w"> </span>apply<span class="w"> </span>--server-side<span class="w"> </span>-f<span class="w"> </span>deploy/crd.yaml
 </code></pre></div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Setting Custom Resource Definition requires your user to
-have cluster-admin role privileges.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This step requires cluster-admin privileges. If you’re using a non-privileged user, you’ll need to set up additional permissions.</p>
 </div>
-<p>If you want to manage Percona Server for MongoDB cluster with a
-non-privileged user, the necessary permissions can be granted by applying the
-next clusterrole:</p>
+<h4 id="step-3-optional-set-up-user-permissions">Step 3: (optional) Set up user permissions<a class="headerlink" href="#step-3-optional-set-up-user-permissions" title="Permanent link">&para;</a></h4>
+<p>If you’re using a non-privileged user, grant the required permissions by applying the following clusterrole:</p>
 <div class="highlight"><pre><span></span><code>oc<span class="w"> </span>create<span class="w"> </span>clusterrole<span class="w"> </span>psmdb-admin<span class="w"> </span>--verb<span class="o">=</span><span class="s2">&quot;*&quot;</span><span class="w"> </span>--resource<span class="o">=</span>perconaservermongodbs.psmdb.percona.com,perconaservermongodbs.psmdb.percona.com/status,perconaservermongodbbackups.psmdb.percona.com,perconaservermongodbbackups.psmdb.percona.com/status,perconaservermongodbrestores.psmdb.percona.com,perconaservermongodbrestores.psmdb.percona.com/status
 oc<span class="w"> </span>adm<span class="w"> </span>policy<span class="w"> </span>add-cluster-role-to-user<span class="w"> </span>psmdb-admin<span class="w"> </span>&lt;some-user&gt;
 </code></pre></div>
-<p>If you have a <a href="https://docs.cert-manager.io/en/release-0.8/getting-started/install/openshift.html">cert-manager  <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2m6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.042-.018.75.75 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1"/></svg></span></a> installed, then you have to execute two more commands to be able to manage certificates with a non-privileged user:</p>
-<div class="highlight"><pre><span></span><code>oc<span class="w"> </span>create<span class="w"> </span>clusterrole<span class="w"> </span>cert-admin<span class="w"> </span>--verb<span class="o">=</span><span class="s2">&quot;*&quot;</span><span class="w"> </span>--resource<span class="o">=</span>iissuers.certmanager.k8s.io,certificates.certmanager.k8s.io
+<p>If you have a <a href="https://docs.cert-manager.io/en/release-0.8/getting-started/install/openshift.html">cert-manager <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2m6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.042-.018.75.75 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1"/></svg></span></a> installed, add these permissions to manage certificates with a non-privileged user:</p>
+<div class="highlight"><pre><span></span><code>oc<span class="w"> </span>create<span class="w"> </span>clusterrole<span class="w"> </span>cert-admin<span class="w"> </span>--verb<span class="o">=</span><span class="s2">&quot;*&quot;</span><span class="w"> </span>--resource<span class="o">=</span>issuers.certmanager.k8s.io,certificates.certmanager.k8s.io
 oc<span class="w"> </span>adm<span class="w"> </span>policy<span class="w"> </span>add-cluster-role-to-user<span class="w"> </span>cert-admin<span class="w"> </span>&lt;some-user&gt;
 </code></pre></div>
-</li>
-<li>
-<p>Create a new <code>psmdb</code> project:</p>
+<h4 id="step-4-create-a-project">Step 4: Create a project<a class="headerlink" href="#step-4-create-a-project" title="Permanent link">&para;</a></h4>
+<p>A project in OpenShift corresponds to a Kubernetes namespace. When you create a new project, you isolate workloads in it.</p>
 <div class="highlight"><pre><span></span><code>oc<span class="w"> </span>new-project<span class="w"> </span>psmdb
 </code></pre></div>
-</li>
-<li>
-<p>Add role-based access control (RBAC) for Percona Server for MongoDB is
-    configured with the <code>deploy/rbac.yaml</code> file. RBAC is
-    based on clearly defined roles and corresponding allowed actions. These
-    actions are allowed on specific Kubernetes resources. The details about users
-    and roles can be found in <a href="https://docs.openshift.com/enterprise/3.0/architecture/additional_concepts/authorization.html">OpenShift documentation  <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2m6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.042-.018.75.75 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1"/></svg></span></a>.</p>
+<details class="example">
+<summary>Sample output</summary>
+<p>Now using project &ldquo;psmdb&rdquo; on server &ldquo;https://api.openshift-4-15-my-cluster.example.com:6443&rdquo;.</p>
+</details>
+<p>The command automatically sets context to this project so that all further resources are created in it.</p>
+<h4 id="step-5-configure-rbac">Step 5: Configure RBAC<a class="headerlink" href="#step-5-configure-rbac" title="Permanent link">&para;</a></h4>
+<p>Role-Based Access Control (RBAC) manages resource access in OpenShift. The Operator needs specific permissions to run Percona Server for MongoDB properly. These permissions are defined within roles.</p>
 <div class="highlight"><pre><span></span><code>oc<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>deploy/rbac.yaml
 </code></pre></div>
+<h4 id="step-6-deploy-the-operator">Step 6: Deploy the Operator<a class="headerlink" href="#step-6-deploy-the-operator" title="Permanent link">&para;</a></h4>
+<p>Now you can deploy the Operator with the following command:</p>
+<div class="highlight"><pre><span></span><code>oc<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>deploy/operator.yaml
+</code></pre></div>
+<h2 id="install-percona-server-for-mongodb">Install Percona Server for MongoDB<a class="headerlink" href="#install-percona-server-for-mongodb" title="Permanent link">&para;</a></h2>
+<p>After installing the Operator, you can deploy Percona Server for MongoDB. This section guides you through the process of setting up secrets, certificates, and creating your first cluster.</p>
+<h3 id="step-1-configure-secrets-optional">Step 1: Configure secrets (optional)<a class="headerlink" href="#step-1-configure-secrets-optional" title="Permanent link">&para;</a></h3>
+<p>By default, the Operator generates users Secrets automatically, so you don’t have to do anything. Yet if you wish to use your own Secrets, here’s how:</p>
+<ol>
+<li>
+<p>Edit the <code>deploy/secrets.yaml</code> file to set up your MongoDB users and passwords as plain text in the <code>stringData</code> section. See <a href="users.html">Users</a> and <a href="https://kubernetes.io/docs/concepts/configuration/secret/">Kubernetes documentation <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2m6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.042-.018.75.75 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1"/></svg></span></a> for details.</p>
 </li>
 <li>
-<p>Start the Operator within OpenShift:</p>
-<div class="highlight"><pre><span></span><code>oc<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>deploy/operator.yaml
+<p>Apply the secrets:</p>
+<div class="highlight"><pre><span></span><code>oc<span class="w"> </span>create<span class="w"> </span>-f<span class="w"> </span>deploy/secrets.yaml
 </code></pre></div>
 </li>
 </ol>
-<h2 id="install-percona-server-for-mongodb">Install Percona Server for MongoDB<a class="headerlink" href="#install-percona-server-for-mongodb" title="Permanent link">&para;</a></h2>
+<h3 id="step-2-configure-certificates-optional">Step 2: Configure certificates (optional)<a class="headerlink" href="#step-2-configure-certificates-optional" title="Permanent link">&para;</a></h3>
+<p>The Operator handles certificate generation automatically, so you don’t have to do anything. However, if you need custom certificates:</p>
+<ol>
+<li>Generate your certificates</li>
+<li>Create a Secret with your certificates</li>
+<li>Reference the Secret in your cluster configuration</li>
+</ol>
+<p>See <a href="TLS.html">TLS instructions</a> for detailed guidance.</p>
+<h3 id="step-3-deploy-the-database-cluster">Step 3: Deploy the database cluster<a class="headerlink" href="#step-3-deploy-the-database-cluster" title="Permanent link">&para;</a></h3>
 <ol>
 <li>
-<p>Add the MongoDB Users secrets to OpenShift. These secrets
-    should be placed as plain text in the stringData section of the
-    <code>deploy/secrets.yaml</code> file as login name and
-    passwords for the user accounts (see <a href="https://kubernetes.io/docs/concepts/configuration/secret/">Kubernetes
-    documentation  <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2m6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.042-.018.75.75 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1"/></svg></span></a>
-    for details).</p>
-<p>After editing the yaml file, the secrets should be created
-with the following command:</p>
-<div class="highlight"><pre><span></span><code>oc<span class="w"> </span>create<span class="w"> </span>-f<span class="w"> </span>deploy/secrets.yaml
-</code></pre></div>
-<p>More details about secrets can be found in <a href="users.html">Users</a>.</p>
-</li>
-<li>
-<p>Now certificates should be generated. By default, the Operator generates
-    certificates automatically, and no actions are required at this step. Still,
-    you can generate and apply your own certificates as secrets according
-    to the <a href="TLS.html">TLS instructions</a>.</p>
-</li>
-<li>
-<p>Percona Server for MongoDB cluster can be created at any time with the following steps:</p>
-<ol>
-<li>
-<p>Uncomment the <code>deploy/cr.yaml</code> field <code>#platform:</code> and edit the field
-    to <code>platform: openshift</code>. The result should be like this:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">psmdb.percona.com/v1alpha1</span>
+<p>Uncomment the <code>deploy/cr.yaml</code> field <code>#platform:</code> and set it to <code>platform: openshift</code>. The result should look like this:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">psmdb.percona.com/v1</span>
 <span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PerconaServerMongoDB</span>
 <span class="nt">metadata</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">my-cluster-name</span>
@@ -6719,19 +8078,24 @@ with the following command:</p>
 </code></pre></div>
 </li>
 <li>
-<p>(optional) In you’re using minishift, please adjust antiaffinity policy to <code>none</code></p>
-<div class="highlight"><pre><span></span><code><span class="w">   </span><span class="nt">affinity</span><span class="p">:</span>
-<span class="w">     </span><span class="nt">antiAffinityTopologyKey</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;none&quot;</span>
+<p>(optional) If you’re using Minishift, set the anti-affinity policy to <code>none</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">affinity</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">antiAffinityTopologyKey</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;none&quot;</span>
 <span class="nn">...</span>
 </code></pre></div>
 </li>
 <li>
-<p>Create/apply the Custom Resource file:</p>
+<p>Apply the Custom Resource file:</p>
 <div class="highlight"><pre><span></span><code>oc<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>deploy/cr.yaml
 </code></pre></div>
-<p>The creation process will take time. When the process is over your
-cluster will obtain the <code>ready</code> status. You can check it with the 
-following command:</p>
+<details class="example">
+<summary>Expected output</summary>
+<div class="no-copy highlight"><pre><span></span><code>perconaservermongodb.psmdb.percona.com/my-cluster-name created
+</code></pre></div>
+</details>
+</li>
+<li>
+<p>It may take up to 10 minutes to complete the cluster deployment. Monitor it with:</p>
 <div class="highlight"><pre><span></span><code>oc<span class="w"> </span>get<span class="w"> </span>psmdb
 </code></pre></div>
 <details class="example">
@@ -6740,58 +8104,75 @@ following command:</p>
 my-cluster-name   my-cluster-name-mongos.default.svc.cluster.local   ready    5m26s
 </code></pre></div>
 </details>
+<p>The <code>ready</code> status indicates that your cluster is fully operational.</p>
 </li>
 </ol>
-</li>
-</ol>
-<h2 id="verifying-the-cluster-operation">Verifying the cluster operation<a class="headerlink" href="#verifying-the-cluster-operation" title="Permanent link">&para;</a></h2>
-<p>It may take ten minutes to get the cluster started. When <code>oc get psmdb</code>
-command finally shows you the cluster status as <code>ready</code>, you can try to connect
-to the cluster.</p>
-<p>To connect to Percona Server for MongoDB you need to construct the MongoDB connection URI string. It includes the credentials of the admin user, which are stored in the <a href="https://kubernetes.io/docs/concepts/configuration/secret/">Secrets <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2m6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.042-.018.75.75 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1"/></svg></span></a> object.</p>
+<h2 id="verify-the-cluster-operation">Verify the cluster operation<a class="headerlink" href="#verify-the-cluster-operation" title="Permanent link">&para;</a></h2>
+<p>When <code>oc get psmdb</code> shows the cluster status as <code>ready</code>, you can try to connect to the cluster.</p>
+<p>To connect to Percona Server for MongoDB, use the connection string Secret that the Operator creates for the <code>databaseAdmin</code> user. This Secret is available starting with Operator version 1.23.0 and newer. For previous versions, refer to the <a href="#connect-manually-alternative">Connect manually</a> section.</p>
 <ol>
 <li>
-<p>List the Secrets objects</p>
+<p>List the Secrets objects:</p>
 <div class="highlight"><pre><span></span><code>oc<span class="w"> </span>get<span class="w"> </span>secrets<span class="w"> </span>-n<span class="w"> </span>&lt;namespace&gt;
 </code></pre></div>
-<p>The Secrets object you are interested in has the
-<code>my-cluster-name-secrets</code> name by default.</p>
+<p>The connection string Secret is named <code>my-cluster-name-databaseadmin-conn-str</code> by default.</p>
 </li>
 <li>
-<p>View the Secret contents to retrieve the admin user credentials.</p>
-<p><div class="highlight"><pre><span></span><code>oc<span class="w"> </span>get<span class="w"> </span>secret<span class="w"> </span>my-cluster-name-secrets<span class="w"> </span>-o<span class="w"> </span>yaml
+<p>Retrieve the connection string</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Sharding is on</label><label for="__tabbed_1_2">Sharding is off</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code>oc<span class="w"> </span>get<span class="w"> </span>secret<span class="w"> </span>&lt;clusterName&gt;-databaseadmin-conn-str<span class="w"> </span>-n<span class="w"> </span>&lt;namespace&gt;<span class="w"> </span><span class="se">\</span>
+<span class="w"> </span>-o<span class="w"> </span><span class="nv">jsonpath</span><span class="o">=</span><span class="s1">&#39;{.data.databaseAdmin_mongos_connectionString}&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>base64<span class="w"> </span>--decode<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">echo</span>
 </code></pre></div>
-The command returns the YAML file with generated Secrets, including the <code>MONGODB_DATABASE_ADMIN_USER</code>
-and <code>MONGODB_DATABASE_ADMIN_PASSWORD</code> strings, which should look as follows:</p>
-<details class="example">
-<summary>Sample output</summary>
-<div class="no-copy highlight"><pre><span></span><code><span class="nn">...</span>
-<span class="nt">data</span><span class="p">:</span>
-<span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">...</span>
-<span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">MONGODB_DATABASE_ADMIN_PASSWORD</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">aDAzQ0pCY3NSWEZ2ZUIzS1I=</span>
-<span class="w">  </span><span class="nt">MONGODB_DATABASE_ADMIN_USER</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ZGF0YWJhc2VBZG1pbg==</span>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code>oc<span class="w"> </span>get<span class="w"> </span>secret<span class="w"> </span>&lt;clusterName&gt;-databaseadmin-conn-str<span class="w"> </span>-n<span class="w"> </span>&lt;namespace&gt;<span class="w"> </span><span class="se">\</span>
+-o<span class="w"> </span><span class="nv">jsonpath</span><span class="o">=</span><span class="s1">&#39;{.data.databaseAdmin_rs0_connectionStringSrv}&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>base64<span class="w"> </span>--decode<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">echo</span>
 </code></pre></div>
-</details>
-<p>The actual login name and password on the output are base64-encoded. To bring it
-back to a human-readable form, run:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s1">&#39;MONGODB_DATABASE_ADMIN_USER&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>base64<span class="w"> </span>--decode
-<span class="nb">echo</span><span class="w"> </span><span class="s1">&#39;MONGODB_DATABASE_ADMIN_PASSWORD&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>base64<span class="w"> </span>--decode
-</code></pre></div>
+</div>
+</div>
+</div>
+<p>See <a href="connection-secrets.html">Connection secrets</a> for other available keys.</p>
 </li>
 <li>
 <p>Run a container with a MongoDB client and connect its console output to your
     terminal. The following command does this, naming the new Pod
     <code>percona-client</code>:</p>
-<div class="highlight"><pre><span></span><code>oc<span class="w"> </span>run<span class="w"> </span>-i<span class="w"> </span>--rm<span class="w"> </span>--tty<span class="w"> </span>percona-client<span class="w"> </span>--image<span class="o">=</span>percona/percona-server-mongodb:7.0.30-16<span class="w"> </span>--restart<span class="o">=</span>Never<span class="w"> </span>--<span class="w"> </span>bash<span class="w"> </span>-il
+<div class="highlight"><pre><span></span><code>oc<span class="w"> </span>run<span class="w"> </span>-i<span class="w"> </span>--rm<span class="w"> </span>--tty<span class="w"> </span>percona-client<span class="w"> </span>--image<span class="o">=</span>percona/percona-server-mongodb:8.0.26-11<span class="w"> </span>--restart<span class="o">=</span>Never<span class="w"> </span>--<span class="w"> </span>bash<span class="w"> </span>-il
 </code></pre></div>
 <p>Executing it may require some time to deploy the corresponding Pod.</p>
 </li>
 <li>
-<p>Now run <code>mongosh</code> tool inside the <code>percona-client</code> command shell using the admin user credentialds you obtained from the
-    Secret, and a proper namespace name instead of the <code>&lt;namespace name&gt;</code>
-    placeholder. The command will look different depending on whether sharding
-    is on (the default behavior) or off:</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">if sharding is on</label><label for="__tabbed_1_2">if sharding is off</label></div>
+<p>Connect using the connection string from step 2:</p>
+<div class="highlight"><pre><span></span><code>mongosh<span class="w"> </span><span class="s2">&quot;&lt;connection-string&gt;&quot;</span>
+</code></pre></div>
+</li>
+</ol>
+<h2 id="connect-manually-alternative">Connect manually (alternative)<a class="headerlink" href="#connect-manually-alternative" title="Permanent link">&para;</a></h2>
+<p>If you need to build a connection URI yourself, retrieve credentials from the user Secret and construct the URI.</p>
+<ol>
+<li>
+<p>List the Secrets objects:</p>
+<div class="highlight"><pre><span></span><code>oc<span class="w"> </span>get<span class="w"> </span>secrets<span class="w"> </span>-n<span class="w"> </span>&lt;namespace&gt;
+</code></pre></div>
+<p>The Secrets object you are interested in has the <code>&lt;cluster-name&gt;-secrets</code> name. (For the cluster <code>my-cluster-name</code>, the Secret name is <code>my-cluster-name-secrets</code>).</p>
+</li>
+<li>
+<p>Retrieve the admin username and password:</p>
+<div class="highlight"><pre><span></span><code>oc<span class="w"> </span>get<span class="w"> </span>secret<span class="w"> </span>&lt;secret-name&gt;<span class="w"> </span>-n<span class="w"> </span>&lt;namespace&gt;<span class="w"> </span>-o<span class="w"> </span><span class="nv">jsonpath</span><span class="o">=</span><span class="s1">&#39;{.data.MONGODB_DATABASE_ADMIN_USER}&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>base64<span class="w"> </span>--decode<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">echo</span>
+oc<span class="w"> </span>get<span class="w"> </span>secret<span class="w"> </span>&lt;secret-name&gt;<span class="w"> </span>-n<span class="w"> </span>&lt;namespace&gt;<span class="w"> </span>-o<span class="w"> </span><span class="nv">jsonpath</span><span class="o">=</span><span class="s1">&#39;{.data.MONGODB_DATABASE_ADMIN_PASSWORD}&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>base64<span class="w"> </span>--decode<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">echo</span>
+</code></pre></div>
+</li>
+<li>
+<p>Run a container with a MongoDB client and connect its console output to your terminal. The following command does this, naming the new Pod <code>percona-client</code>:</p>
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>-n<span class="w"> </span>&lt;namespace&gt;<span class="w"> </span>run<span class="w"> </span>-i<span class="w"> </span>--rm<span class="w"> </span>--tty<span class="w"> </span>percona-client<span class="w"> </span>--image<span class="o">=</span>percona/percona-server-mongodb:8.0.26-11<span class="w"> </span>--restart<span class="o">=</span>Never<span class="w"> </span>--<span class="w"> </span>bash<span class="w"> </span>-il
+</code></pre></div>
+<p>It may take some time to deploy the corresponding Pod.</p>
+</li>
+<li>
+<p>Now run <code>mongosh</code> tool inside the <code>percona-client</code> command shell using the admin user credentials you obtained from the Secret, and a proper namespace name instead of the <code>&lt;namespace name&gt;</code> placeholder. The command will look different depending on whether sharding is on (the default behavior) or off:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">sharding is on</label><label for="__tabbed_2_2">sharding is off</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code>mongosh<span class="w"> </span><span class="s2">&quot;mongodb://databaseAdmin:databaseAdminPassword@my-cluster-name-mongos.&lt;namespace name&gt;.svc.cluster.local/admin?ssl=false&quot;</span>
@@ -6810,7 +8191,7 @@ back to a human-readable form, run:</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="January 12, 2026 17:49:48 UTC">January 12, 2026</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 23, 2026 17:06:36 UTC">July 23, 2026</span>
       
         <br>
         Created:

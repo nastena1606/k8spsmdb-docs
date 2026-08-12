@@ -10,7 +10,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Splitting the replica set of the database cluster over multiple Kubernetes clusters can be useful to get a fault-tolerant system in which all replicas are in different data centers.">
+        <meta name="description" content="Splitting a replica set over multiple Kubernetes clusters gives you a fault-tolerant system where members live in different data centers.">
       
       
         <meta name="author" content="Percona LLC">
@@ -22,7 +22,7 @@
         <link rel="prev" href="replication-backups.html">
       
       
-        <link rel="next" href="monitoring.html">
+        <link rel="next" href="clustersync.html">
       
       
         
@@ -106,8 +106,8 @@
                  
                  <meta property="og:type" content="website" />
                  <meta property="og:title" content="Percona Operator for MongoDB - Splitting replica set across multiple data centers" />
-                 <meta property="og:image" content="https://docs.percona.com/percona-operator-for-mongodb/assets/images/kubernetes-operators.png">
-                 <meta property="og:url" content="https://docs.percona.com/percona-operator-for-mongodb/">
+                 <meta property="og:image" content="https://docs.percona.com/percona-operator-for-mongodb/latest/assets/images/kubernetes-operators.png">
+                 <meta property="og:url" content="https://docs.percona.com/percona-operator-for-mongodb/latest/index.html">
                 </head>
                 <body>
                 </body>
@@ -132,7 +132,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#splitting-replica-set-across-multiple-data-centers" class="md-skip">
+        <a href="#splitting-a-replica-set-across-multiple-data-centers" class="md-skip">
           Skip to content
         </a>
       
@@ -542,6 +542,34 @@
     
   
     Comparison with other solutions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="limitations.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Known limitations
   
 
     
@@ -1097,6 +1125,34 @@
     
   
     Install on Microsoft Azure Kubernetes Service (AKS)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="rke2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Install on Rancher Kubernetes Engine (RKE2)
   
 
     
@@ -1829,6 +1885,34 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="connection-secrets.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Connection secrets
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
     
     
     
@@ -1838,10 +1922,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_1_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_1_5" >
         
           
-          <label class="md-nav__link" for="__nav_7_1_4" id="__nav_7_1_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7_1_5" id="__nav_7_1_5_label" tabindex="0">
             
   
   
@@ -1859,8 +1943,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_1_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_1_4">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_1_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_1_5">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1948,6 +2032,109 @@
   
   
   
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Authentication
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Authentication
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ldap.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OpenLDAP integration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="oidc.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OIDC authentication
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
       <a href="auth-disable.html" class="md-nav__link">
         
@@ -1965,6 +2152,42 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="auth-bypass-localhost.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Disable localhost authentication bypass
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -2368,6 +2591,34 @@
     
   
     Update certificates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tls-cert-management-policy.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configure the TLS certificate management policy
   
 
     
@@ -3215,6 +3466,62 @@
   
   
     <li class="md-nav__item">
+      <a href="backups-storage-oss.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Alibaba Cloud OSS storage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="backups-storage-oci.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Oracle Cloud Infrastructure Object Storage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="backups-storage-filesystem.html" class="md-nav__link">
         
   
@@ -3325,7 +3632,7 @@
   <span class="md-ellipsis">
     
   
-    Make a backup
+    PVC snapshot backups
   
 
     
@@ -3338,6 +3645,145 @@
         
         <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_1_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8_1_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    PVC snapshot backups
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="backups-pvc-snapshots.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="backups-pvc-setup.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configure PVC snapshots
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="backups-pvc-usage.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Use PVC snapshots
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_1_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_1_6" id="__nav_8_1_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Make a backup
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_1_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_1_6">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -3454,10 +3900,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_1_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_1_8" >
         
           
-          <label class="md-nav__link" for="__nav_8_1_7" id="__nav_8_1_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_8_1_8" id="__nav_8_1_8_label" tabindex="0">
             
   
   
@@ -3475,8 +3921,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_1_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8_1_7">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_1_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_1_8">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -3557,6 +4003,34 @@
     
   
     On a new cluster with different replica set names
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="backups-restore-new-name.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Restore a collection under a different name
   
 
     
@@ -4170,22 +4644,55 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#configuring-the-main-site" class="md-nav__link">
+  <a href="#choose-your-topology" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Configuring the Main site
+        Choose your topology
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Configuring the Main site">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common steps
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common steps">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#configuring-replica-sites" class="md-nav__link">
+  <a href="#initial-preparation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Configuring Replica sites
+        Initial preparation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deploy-the-main-site" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deploy the Main site
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#export-secrets-from-the-main-site" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Export Secrets from the Main site
       
     </span>
   </a>
@@ -4194,6 +4701,117 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#distribute-data-bearing-members-across-sites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Distribute data-bearing members across sites
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Distribute data-bearing members across sites">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deploy-the-replica-sites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deploy the Replica sites
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-replica-sites-to-the-main-site" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Add replica sites to the Main site
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deploy-primary-secondary-arbiter-across-sites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deploy Primary-Secondary-Arbiter across sites
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Deploy Primary-Secondary-Arbiter across sites">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deploy-the-replica-site-data-bearing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deploy the Replica site (data-bearing)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deploy-the-arbiter-site" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deploy the arbiter site
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-the-replica-member-and-external-arbiter-to-the-main-site" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Add the Replica member and external arbiter to the Main site
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verify-replica-set" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Verify replica set
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-more-than-one-data-bearing-member-per-site" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using more than one data-bearing member per site
+      
+    </span>
+  </a>
   
 </li>
       
@@ -4209,6 +4827,117 @@
           </ul>
         </nav>
       
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_4" id="__nav_8_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Real-time replication with Percona ClusterSync for MongoDB
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Real-time replication with Percona ClusterSync for MongoDB
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="clustersync.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About PCSM integration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="clustersync-setup.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Set up and use PCSM
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -4366,7 +5095,7 @@
   <span class="md-ellipsis">
     
   
-    Troubleshooting
+    Search and Vector search
   
 
     
@@ -4379,6 +5108,116 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Search and Vector search
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="search-overview.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About full-text and vector search
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="search-setup.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configure search and vector search
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Troubleshooting
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -4507,6 +5346,34 @@
   
   
     <li class="md-nav__item">
+      <a href="debug-backup-restore.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Troubleshoot backups and restores
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="debug-images.html" class="md-nav__link">
         
   
@@ -4578,10 +5445,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
         
           
-          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
             
   
   
@@ -4599,8 +5466,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_10">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -4625,34 +5492,6 @@
     
   
     Install the database with customized parameters
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="ldap.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    OpenLDAP integration
   
 
     
@@ -4841,34 +5680,6 @@
   
   
     <li class="md-nav__item">
-      <a href="image-query.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Retrieve Percona certified images
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="delete.html" class="md-nav__link">
         
   
@@ -4912,10 +5723,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
         
           
-          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
             
   
   
@@ -4933,12 +5744,59 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_11">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
             <span class="md-nav__icon md-icon"></span>
             
   
     Reference
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_12_1" id="__nav_12_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Custom Resource reference
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_12_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Custom Resource reference
   
 
           </label>
@@ -4958,7 +5816,7 @@
   <span class="md-ellipsis">
     
   
-    Custom Resource options
+    PerconaServerMongoDB options
   
 
     
@@ -4986,7 +5844,7 @@
   <span class="md-ellipsis">
     
   
-    Backup Resource options
+    Backup options
   
 
     
@@ -5014,7 +5872,7 @@
   <span class="md-ellipsis">
     
   
-    Restore Resource options
+    Restore options
   
 
     
@@ -5023,6 +5881,42 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="clustersync-options.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ClusterSync options
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -5062,6 +5956,53 @@
   
   
   
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_12_3" id="__nav_12_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Certified images
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_12_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Certified images
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
       <a href="images.html" class="md-nav__link">
         
@@ -5079,6 +6020,42 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="image-query.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Retrieve Percona certified images
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -5174,6 +6151,53 @@
   
   
   
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_12_7" id="__nav_12_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Legal
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_12_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Legal
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
       <a href="copyright.html" class="md-nav__link">
         
@@ -5224,6 +6248,42 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="legal-notice.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Legal Notice
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -5246,10 +6306,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13" >
         
           
-          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_13" id="__nav_13_label" tabindex="0">
             
   
   
@@ -5267,8 +6327,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_12">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_13">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -5293,6 +6353,34 @@
     
   
     Release notes index
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="RN/Kubernetes-Operator-for-PSMONGODB-RN1.23.0.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Percona Operator for MongoDB 1.23.0 (2026-07-23)
   
 
     
@@ -6452,22 +7540,55 @@ box-shadow: 0 1px 3px rgba(0,0,0,0.2);
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#configuring-the-main-site" class="md-nav__link">
+  <a href="#choose-your-topology" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Configuring the Main site
+        Choose your topology
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Configuring the Main site">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common steps
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common steps">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#configuring-replica-sites" class="md-nav__link">
+  <a href="#initial-preparation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Configuring Replica sites
+        Initial preparation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deploy-the-main-site" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deploy the Main site
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#export-secrets-from-the-main-site" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Export Secrets from the Main site
       
     </span>
   </a>
@@ -6476,6 +7597,117 @@ box-shadow: 0 1px 3px rgba(0,0,0,0.2);
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#distribute-data-bearing-members-across-sites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Distribute data-bearing members across sites
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Distribute data-bearing members across sites">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deploy-the-replica-sites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deploy the Replica sites
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-replica-sites-to-the-main-site" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Add replica sites to the Main site
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deploy-primary-secondary-arbiter-across-sites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deploy Primary-Secondary-Arbiter across sites
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Deploy Primary-Secondary-Arbiter across sites">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deploy-the-replica-site-data-bearing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deploy the Replica site (data-bearing)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deploy-the-arbiter-site" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deploy the arbiter site
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-the-replica-member-and-external-arbiter-to-the-main-site" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Add the Replica member and external arbiter to the Main site
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verify-replica-set" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Verify replica set
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-more-than-one-data-bearing-member-per-site" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using more than one data-bearing member per site
+      
+    </span>
+  </a>
   
 </li>
       
@@ -6532,117 +7764,469 @@ window.addEventListener('afterprint', (event) => {
   
 
 
-<h1 id="splitting-replica-set-across-multiple-data-centers">Splitting replica set across multiple data centers<a class="headerlink" href="#splitting-replica-set-across-multiple-data-centers" title="Permanent link">&para;</a></h1>
-<p>Splitting the replica set of the database cluster over multiple Kubernetes clusters can be useful to get a fault-tolerant system in which all replicas are in different data centers.</p>
-<p>The Operator cannot deploy MongoDB replicas to other data centers, but this solution can be achieved with a number of Operator deployments, equal to the size of your replica set. So, you will need at least 3 Operator instances: one Operator to control the replica set via cross-site replication, and at least two Operators to bootstrap the unmanaged clusters. Each cluster will contain replica set with only one member, and the <em>Main</em> site will manage instances from other sites as external nodes. All configuration of the replica set is done manually.</p>
-<p>The solution has the following limitations to consider:</p>
+<h1 id="splitting-a-replica-set-across-multiple-data-centers">Splitting a replica set across multiple data centers<a class="headerlink" href="#splitting-a-replica-set-across-multiple-data-centers" title="Permanent link">&para;</a></h1>
+<p>Splitting a replica set over multiple Kubernetes clusters gives you a fault-tolerant system where members live in different data centers.</p>
+<p>The Operator cannot place MongoDB Pods in other data centers by itself. You achieve this by deploying an Operator on each site: the Operator on the <em>Main</em> site manages the replica set configuration through cross-site replication. Operators on other sites bootstrap the unmanaged clusters whose members you register on the Main site as <code>externalNodes</code>. You configure hostnames, TLS, and membership manually.</p>
+<p>This solution has the following limitations:</p>
 <ul>
-<li>setting it up involves a number of manual operations, and the same applies to scaling such a manually configured replica,</li>
-<li>backups are supported on the <em>Main</em> site only, not on the <em>Replica</em> sites.</li>
+<li>Setup and scaling require manual operations.</li>
+<li>Backups are supported on the <em>Main</em> site only, not on the <em>Replica</em> sites.</li>
 </ul>
-<h2 id="configuring-the-main-site">Configuring the <em>Main</em> site<a class="headerlink" href="#configuring-the-main-site" title="Permanent link">&para;</a></h2>
-<p>You will use the externally reachable URI for each of your replica set instances, manually overwiriting its default local fully-qualified domain name (FQDN) in the Custom Resource manifest. Also you will need including all these host names into TLS certificates. So the first thing needed is the list of these externally reachable names. In the above example we will use the following ones:</p>
-<ul>
-<li><code>r1.percona.local:443</code> URI for the <code>cluster-name-rs0-0</code> (1<sup>st</sup> replica set instance),</li>
-<li><code>r2.percona.local:443</code> for the 2<sup>nd</sup> replica set instance,</li>
-<li><code>r3.percona.local:443</code> for the 3<sup>rd</sup> replica set instance.</li>
-</ul>
-<p>Following steps will allow you to prepare the <em>Main</em> site for cross-site replication, keeping in mind the multiple data centers deployment:</p>
-<p>TLS certificates generated by the Operator are not suitable and it’s required to <a href="tls-manual.html">generate certificates manually</a> on the <em>Main</em> site before creating a database cluster, with all names from <code>replsetOverrides</code> and <code>externalNodes</code>.</p>
+<h2 id="choose-your-topology">Choose your topology<a class="headerlink" href="#choose-your-topology" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Goal</th>
+<th>Topology</th>
+<th>Members</th>
+<th>Go to</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Distribute a full data copy across data centers</td>
+<td>1 Main + 2 Replica sites, all data-bearing</td>
+<td>3 voting data members</td>
+<td><a href="#distribute-data-bearing-members-across-sites">Distribute data-bearing members across sites</a></td>
+</tr>
+<tr>
+<td>You have (or want) only two data-bearing sites and need an odd vote count with a third site that stores no data</td>
+<td>Primary-Secondary-Arbiter (PSA) across sites</td>
+<td>2 data members + 1 external arbiter</td>
+<td><a href="#deploy-primary-secondary-arbiter-across-sites">Deploy Primary-Secondary-Arbiter across sites</a></td>
+</tr>
+</tbody>
+</table>
+<p>For either options, you must do these <a href="#common-steps">Common steps</a> first:</p>
+<ol>
+<li>Generate TLS certificates</li>
+<li>Deploy the main site</li>
+<li>Export Secrets from the main site</li>
+</ol>
+<p>In the following example setups we deploy sites in separate namespaces within a single Kubernetes cluster to emulate isolation and communication boundaries between data centers. In production, you will use separate Kubernetes clusters or physically distinct data centers to achieve true fault isolation, scalability, and resilience.</p>
+<h2 id="common-steps">Common steps<a class="headerlink" href="#common-steps" title="Permanent link">&para;</a></h2>
+<h3 id="initial-preparation">Initial preparation<a class="headerlink" href="#initial-preparation" title="Permanent link">&para;</a></h3>
 <ol>
 <li>
-<p>Use <a href="tls-manual.html">TLS ceritficates manual generation instruction</a> to prepare TLS certificates with the host names from your prepared list.</p>
-</li>
-<li>
-<p>Deploy your <a href="replication-main.html">Main site</a> as usual, with these manually generated certificates. Don&rsquo;t forget to turn on <a href="expose.html#controlling-hostnames-in-replset-configuration">Pods exposure on your Main cluster</a>.</p>
-</li>
-<li>
-<p>Now override hostname of the first replica in the replica set configuration by using the <code>replsets.replsetOverrides</code> subsection in the Custom Resource options manifest with the externally reachable endpoint from your externally reachable URI list:</p>
-<div class="highlight"><pre><span></span><code><span class="nn">...</span>
-<span class="nt">unsafeFlags</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">replsetSize</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
-<span class="nt">replsets</span><span class="p">:</span>
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rs0</span>
-<span class="w">   </span><span class="l l-Scalar l-Scalar-Plain">size</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
-<span class="w">   </span><span class="l l-Scalar l-Scalar-Plain">replsetOverrides</span><span class="p p-Indicator">:</span>
-<span class="w">     </span><span class="nt">cluster-name-rs0-0</span><span class="p">:</span>
-<span class="hll"><span class="w">       </span><span class="nt">host</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">r1.percona.local:443</span>
-</span><span class="w">  </span><span class="w w-Error"> </span><span class="l l-Scalar l-Scalar-Plain">...</span>
+<p>Clone the repository with all manifests and source code:</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>-b<span class="w"> </span>v1.23.0<span class="w"> </span>https://github.com/percona/percona-server-mongodb-operator
+<span class="nb">cd</span><span class="w"> </span>percona-server-mongodb-operator
 </code></pre></div>
-<p>The <code>unsafeFlags.replsetSize</code> option in the above example is needed to create replica set with less than 3 instances.</p>
-<p>The actual approach to make the URI reachable from the outside of your Kubernetes cluster depends on the exposure type. It is different in case of the <a href="https://kubernetes.io/docs/concepts/services-networking/service/#type-nodeport">NodePort exposure <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2m6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.042-.018.75.75 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1"/></svg></span></a>, <a href="https://kubernetes.io/docs/concepts/services-networking/service/#loadbalancer">Load balancer of the cloud provider  <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2m6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.042-.018.75.75 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1"/></svg></span></a>, etc. Operator won’t perform any validation for hostnames. It’s user’s responsibility to ensure connectivity.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>You can also add custom tags to the replset members, just to make their identification easier:</p>
-<div class="highlight"><pre><span></span><code><span class="nn">...</span>
-<span class="nt">replsetOverrides</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">cluster-name-rs0-0</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">host</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">r1.percona.local:443</span>
-<span class="hll"><span class="w">    </span><span class="nt">tags</span><span class="p">:</span>
-</span><span class="w">      </span><span class="nt">team</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cloud</span>
-<span class="nn">...</span>
+</li>
+<li>
+<p>Export namespace variables. Use the set that matches your topology:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Three data-bearing sites</label><label for="__tabbed_1_2">PSA architecture</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">MAIN</span><span class="o">=</span>main
+<span class="nb">export</span><span class="w"> </span><span class="nv">REPLICA1</span><span class="o">=</span>replica1
+<span class="nb">export</span><span class="w"> </span><span class="nv">REPLICA2</span><span class="o">=</span>replica2
 </code></pre></div>
 </div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">MAIN</span><span class="o">=</span>main
+<span class="nb">export</span><span class="w"> </span><span class="nv">REPLICA</span><span class="o">=</span>replica
+<span class="nb">export</span><span class="w"> </span><span class="nv">ARBITER</span><span class="o">=</span>arbiter
+</code></pre></div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<p>Create the namespaces for your topology:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Three data-bearing sites</label><label for="__tabbed_2_2">PSA architecture</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>create<span class="w"> </span>namespace<span class="w"> </span><span class="nv">$MAIN</span>
+kubectl<span class="w"> </span>create<span class="w"> </span>namespace<span class="w"> </span><span class="nv">$REPLICA1</span>
+kubectl<span class="w"> </span>create<span class="w"> </span>namespace<span class="w"> </span><span class="nv">$REPLICA2</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>create<span class="w"> </span>namespace<span class="w"> </span><span class="nv">$MAIN</span>
+kubectl<span class="w"> </span>create<span class="w"> </span>namespace<span class="w"> </span><span class="nv">$REPLICA</span>
+kubectl<span class="w"> </span>create<span class="w"> </span>namespace<span class="w"> </span><span class="nv">$ARBITER</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<p>Deploy the Operator in each namespace. Replace <code>&lt;namespace&gt;</code> with each value you exported:</p>
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>apply<span class="w"> </span>--server-side<span class="w"> </span>-f<span class="w"> </span>deploy/bundle.yaml<span class="w"> </span>-n<span class="w"> </span>&lt;namespace&gt;
+</code></pre></div>
 </li>
 </ol>
-<h3 id="configuring-replica-sites">Configuring <em>Replica</em> sites<a class="headerlink" href="#configuring-replica-sites" title="Permanent link">&para;</a></h3>
-<p>To configure <em>Replica</em> sites, you should <a href="replication-replica.html">deploy your Relica sites</a>, repeating the following steps for each Kubernetes cluster you are adding:</p>
+<h3 id="deploy-the-main-site">Deploy the Main site<a class="headerlink" href="#deploy-the-main-site" title="Permanent link">&para;</a></h3>
+<p>TLS certificates generated by the Operator are not enough for multi-site layouts. You need to generate certificates manually on the Main site before you create the database cluster, and include the Main cluster name and the hostname of every replica set member you will connect.</p>
 <ol>
 <li>
-<p>Copy secrets from the <em>Main</em> site, rename them according to the cluster name you use on the <em>Replica</em> site (if needed), and apply.</p>
+<p>Prepare TLS certificates with the Main site cluster name, the hostnames of all members you will add later, and the <code>$MAIN</code> namespace. See <a href="tls-manual.html">TLS certificates manual generation</a> for the steps.</p>
+</li>
+<li>
+<p>Rename <code>deploy/cr.yaml</code> to <code>deploy/cr-main.yaml</code>. Edit it and set:</p>
 <ul>
-<li>
-<p><code>cluster1-ssl</code> (SSL certificates for client connections),</p>
-</li>
-<li>
-<p><code>cluster1-ssl-internal</code> (SSL certificates for replication),</p>
-</li>
-<li>
-<p><code>cluster1-secrets</code> (user credentials),</p>
-</li>
-<li>
-<p><code>cluster1-mongodb-encryption-key</code> (encryption key).</p>
-</li>
+<li><code>metadata.name</code> to a distinct cluster name (for example, <code>main-cluster</code>). It must match the name you used when generating certificates.</li>
+<li><code>spec.secrets.ssl</code> and <code>spec.secrets.sslInternal</code> to the certificates you created</li>
+<li><code>spec.unsafeFlags.replsetSize</code> to <code>true</code> to create a replica set with fewer than three instances</li>
+<li><code>spec.replsets.size</code> to <code>1</code></li>
+<li><code>spec.sharding.enabled</code> to <code>false</code></li>
+<li><a href="expose.html#controlling-hostnames-in-replset-configuration">Expose</a> the replica set Pod so other sites can reach it. For example, via MCS <code>svc.clusterset.local</code>, or by using an externally reachable Service type such as <code>LoadBalancer</code>/<code>NodePort</code> and matching hostnames in TLS certificates.</li>
 </ul>
+<p>The sample configuration looks like this:</p>
+<div class="highlight"><span class="filename">cr-main.yaml</span><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">psmdb.percona.com/v1</span>
+<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PerconaServerMongoDB</span>
+<span class="nt">metadata</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">main-cluster</span>
+<span class="w">  </span><span class="nt">finalizers</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">percona.com/delete-psmdb-pods-in-order</span>
+<span class="nt">spec</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">unsafeFlags</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">replsetSize</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">  </span><span class="nt">updateStrategy</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SmartUpdate</span>
+<span class="w">  </span><span class="nt">secrets</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">users</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">main-cluster-secrets</span>
+<span class="w">    </span><span class="nt">encryptionKey</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">main-cluster-mongodb-encryption-key</span>
+<span class="w">    </span><span class="nt">ssl</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">main-cluster-ssl</span>
+<span class="w">    </span><span class="nt">sslInternal</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">main-cluster-ssl-internal</span>
+<span class="w">  </span><span class="nt">replsets</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rs0</span>
+<span class="w">    </span><span class="nt">size</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
+<span class="w">    </span><span class="nt">expose</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">      </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ClusterIP</span>
+<span class="w">  </span><span class="nt">sharding</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="w">  </span><span class="c1"># The rest of your configuration</span>
+</code></pre></div>
 </li>
 <li>
-<p>Deploy the database cluster on the <em>Replica</em> site. Don&rsquo;t forgetting the following:</p>
-<ol>
-<li>
-<p>All <em>Replica</em> sites must be deployed with the <code>unmanaged: true</code> Custom Resource option. This will stop the Operator in the <em>Replica</em> cluster from touching the MongoDB replset configuration. Starting from this moment, only the Operator of the <em>Main</em> cluster will be able to modify it.</p>
+<p>Deploy the Main site:</p>
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>deploy/cr-main.yaml<span class="w"> </span>-n<span class="w"> </span><span class="nv">$MAIN</span>
+</code></pre></div>
 </li>
 <li>
-<p>Backups must be disabled with the <code>backup.enabaled: false</code> Custom Resource option.</p>
-</li>
-<li>
-<p>The <code>updateStrategy</code> Custom Resource option must be set to <code>RollingUpdate</code> or <code>OnDelete</code>.</p>
-</li>
-<li>
-<p>In order to create a single-instance replica set, you will need to the <code>unsafeFlags.replsetSize</code> option to <code>true</code> as you did on the <em>Main</em> site.</p>
+<p>Wait until the cluster reports <code>Ready</code>:</p>
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>get<span class="w"> </span>psmdb<span class="w"> </span>main-cluster<span class="w"> </span>-n<span class="w"> </span><span class="nv">$MAIN</span><span class="w"> </span>-o<span class="w"> </span>yaml<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>state:
+</code></pre></div>
+<p>Expected output: <code>state: Ready</code>.</p>
 </li>
 </ol>
+<h3 id="export-secrets-from-the-main-site">Export Secrets from the Main site<a class="headerlink" href="#export-secrets-from-the-main-site" title="Permanent link">&para;</a></h3>
+<p>All replica set sites must share the same user credentials and TLS certificates. For this reason, export them from the main site and create the corresponding Secrets on the replica sites. Follow the steps in the <a href="replication-main.html#export-the-cluster-secrets-and-certificates-to-be-copied-from-main-to-replica">Export the Secrets</a> section.</p>
+<p>Also, update the namespace in each Secret to point to the target namespace. Depending on the topology you chose, the target namespaces are: <code>$REPLICA1</code>/<code>$REPLICA2</code> for the replica clusters, or <code>$REPLICA</code>/ <code>$ARBITER</code> for the PSA. </p>
+<p>Replace the <code>&lt;target-namespace&gt;</code>, <code>&lt;cluster-name&gt;-&lt;secret-name&gt;</code> placeholders as needed in the following command:</p>
+<div class="highlight"><pre><span></span><code>```bash
+sed -i.bak &quot;s/namespace: $MAIN/namespace: $REPLICA/&quot; &quot;&lt;cluster-name&gt;-&lt;secret-name&gt;.yaml&quot;
+```
+</code></pre></div>
+<p>As a result you should have the full set of Secret files for each unmanaged site you will deploy: </p>
+<ul>
+<li><code>&lt;cluster-name&gt;-ssl.yaml</code> - SSL certificates for client connections,</li>
+<li><code>&lt;cluster-name&gt;-ssl-internal.yaml</code> - SSL certificates for replication,</li>
+<li><code>&lt;cluster-name&gt;-secrets.yaml</code> - user credentials,</li>
+<li><code>&lt;cluster-name&gt;-mongodb-encryption-key.yaml</code> - encryption key file.</li>
+</ul>
+<p>Continue with <a href="#distribute-data-bearing-members-across-sites">Distribute data-bearing members across sites</a> or <a href="#deploy-primary-secondary-arbiter-across-sites">Deploy Primary-Secondary-Arbiter across sites</a> for further configuration.</p>
+<h2 id="distribute-data-bearing-members-across-sites">Distribute data-bearing members across sites<a class="headerlink" href="#distribute-data-bearing-members-across-sites" title="Permanent link">&para;</a></h2>
+<p>In this site you deploy one Main site and two Replica sites. Each site contains a single data-bearing member. Together they form a three-member replica set with an odd number of voters and a full data copy in every data center.</p>
+<table>
+<thead>
+<tr>
+<th>Site</th>
+<th>Role</th>
+<th>Members</th>
+<th>Name</th>
+<th>Namespace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Main (data center 1)</td>
+<td>Data-bearing, Operator-managed</td>
+<td>1 Pod (<code>size: 1</code>)</td>
+<td><code>main-cluster</code></td>
+<td><code>main</code></td>
+</tr>
+<tr>
+<td>Replica 1 (data center 2)</td>
+<td>Data-bearing, unmanaged</td>
+<td>1 Pod (<code>unmanaged: true</code>, <code>size: 1</code>)</td>
+<td><code>replica1-cluster</code></td>
+<td><code>replica1</code></td>
+</tr>
+<tr>
+<td>Replica 2 (data center 3)</td>
+<td>Data-bearing, unmanaged</td>
+<td>1 Pod (<code>unmanaged: true</code>, <code>size: 1</code>)</td>
+<td><code>replica2-cluster</code></td>
+<td><code>replica2</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="deploy-the-replica-sites">Deploy the Replica sites<a class="headerlink" href="#deploy-the-replica-sites" title="Permanent link">&para;</a></h3>
+<p>Make sure you have completed the <a href="#common-steps">Common steps</a> before you proceed.</p>
+<p>Repeat the following for <strong>each</strong> Replica site (<code>replica1-cluster</code> and <code>replica2-cluster</code>). The steps differ only by cluster name and namespace.</p>
+<p>The commands below show the configuration of the <code>replica1-cluster</code> cluster.</p>
+<ol>
+<li>
+<p>Apply the Secret files you prepared for that site:</p>
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>replica1-cluster-mongodb-encryption-key.yaml<span class="w"> </span>-n<span class="w"> </span><span class="nv">$REPLICA1</span>
+kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>replica1-cluster-secrets.yaml<span class="w"> </span>-n<span class="w"> </span><span class="nv">$REPLICA1</span>
+kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>replica1-cluster-ssl-internal.yaml<span class="w"> </span>-n<span class="w"> </span><span class="nv">$REPLICA1</span>
+kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>replica1-cluster-ssl.yaml<span class="w"> </span>-n<span class="w"> </span><span class="nv">$REPLICA1</span>
+</code></pre></div>
 </li>
 <li>
-<p>Now add the new <em>Replica</em> site&rsquo;s Pod <strong>to your <em>Main</em> site&rsquo;s</strong> <code>externalNodes</code> subsection of the Custom Resource options manifest:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">replsets</span><span class="p">:</span>
+<p>Create a Custom Resource manifest for the site. Rename the <code>deploy/cr.yaml</code> to <code>deploy/cr-replica1.yaml</code>. Set the following keys: </p>
+<ul>
+<li><code>metadata.name</code> to a distinct name (<code>replica1-cluster</code> / <code>replica2-cluster</code>)</li>
+<li><code>spec.secrets</code> to the Secrets you created for that site in  <code>users</code>, <code>encryptionKey</code>, <code>ssl</code>, <code>sslInternal</code></li>
+<li><code>unmanaged: true</code> — only the Main site Operator may change the replica set configuration</li>
+<li><code>backup.enabled: false</code> - backups are available only on the Main site</li>
+<li><code>updateStrategy</code> to <code>RollingUpdate</code> or <code>OnDelete</code></li>
+<li><code>unsafeFlags.replsetSize: true</code> and <code>replsets.size: 1</code></li>
+<li>Expose the Pod the same way you exposed the Main site member</li>
+</ul>
+<p>Here&rsquo;s the example configuration for the <code>replica1-cluster</code>:</p>
+<div class="highlight"><span class="filename">cr-replica1.yaml</span><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">psmdb.percona.com/v1</span>
+<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PerconaServerMongoDB</span>
+<span class="nt">metadata</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">replica1-cluster</span>
+<span class="w">  </span><span class="nt">finalizers</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">percona.com/delete-psmdb-pods-in-order</span>
+<span class="nt">spec</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">unmanaged</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">  </span><span class="nt">updateStrategy</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">RollingUpdate</span>
+<span class="w">  </span><span class="nt">secrets</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">users</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">replica1-cluster-secrets</span>
+<span class="w">    </span><span class="nt">encryptionKey</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">replica1-cluster-mongodb-encryption-key</span>
+<span class="w">    </span><span class="nt">ssl</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">replica1-cluster-ssl</span>
+<span class="w">    </span><span class="nt">sslInternal</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">replica1-cluster-ssl-internal</span>
+<span class="w">  </span><span class="nt">unsafeFlags</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">replsetSize</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">  </span><span class="nt">replsets</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rs0</span>
+<span class="w">    </span><span class="nt">size</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
+<span class="w">    </span><span class="nt">expose</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">      </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ClusterIP</span>
+<span class="w">  </span><span class="nt">sharding</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="w">  </span><span class="nt">backup</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="w">  </span><span class="c1"># The rest of your configuration</span>
+</code></pre></div>
+</li>
+<li>
+<p>Deploy the site:</p>
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>deploy/cr-replica1.yaml<span class="w"> </span>-n<span class="w"> </span><span class="nv">$REPLICA1</span>
+</code></pre></div>
+</li>
+<li>
+<p>Repeat steps 2 and 3 and deploy the <code>replica2-cluster</code>. Replace the cluster name and the namespace.</p>
+</li>
+</ol>
+<h3 id="add-replica-sites-to-the-main-site">Add replica sites to the Main site<a class="headerlink" href="#add-replica-sites-to-the-main-site" title="Permanent link">&para;</a></h3>
+<p>On the Main site, register both Replica members under <code>replsets.externalNodes</code> as voting members (<code>votes: 1</code>, <code>priority: 1</code>).</p>
+<p>Specify endpoints as <code>&lt;pod-name&gt;.&lt;service-name&gt;.&lt;namespace&gt;.svc.cluster.local:27017</code> (the service name is typically <code>&lt;cluster-name&gt;-&lt;replset-name&gt;</code>). Confirm endpoint names with <code>kubectl get pods</code> and <code>kubectl get svc</code> on each site. If you use MCS or external hostnames, use those reachable names instead and include them in TLS certificates.</p>
+<div class="highlight"><span class="filename">cr-main.yaml</span><pre><span></span><code><span class="nt">replsets</span><span class="p">:</span>
 <span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rs0</span>
 <span class="w">  </span><span class="nt">size</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
-<span class="w">  </span><span class="nt">replsetOverrides</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">cluster1-rs0-0</span><span class="p">:</span>
-<span class="w">      </span><span class="nt">host</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">r1.percona.local:443</span>
 <span class="w">  </span><span class="nt">externalNodes</span><span class="p">:</span>
-<span class="hll"><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">host</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">r2.percona.local:443</span>
-</span><span class="hll"><span class="w">    </span><span class="nt">votes</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
-</span><span class="hll"><span class="w">    </span><span class="nt">priority</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
-</span></code></pre></div>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">host</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">replica1-cluster-rs0-0.replica1-cluster-rs0.replica1.svc.cluster.local:27017</span>
+<span class="w">    </span><span class="nt">votes</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
+<span class="w">    </span><span class="nt">priority</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">host</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">replica2-cluster-rs0-0.replica2-cluster-rs0.replica2.svc.cluster.local:27017</span>
+<span class="w">    </span><span class="nt">votes</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
+<span class="w">    </span><span class="nt">priority</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
+</code></pre></div>
+<p>Apply the updated Main site Custom Resource:</p>
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>deploy/cr-main.yaml<span class="w"> </span>-n<span class="w"> </span><span class="nv">$MAIN</span>
+</code></pre></div>
+<h2 id="deploy-primary-secondary-arbiter-across-sites">Deploy Primary-Secondary-Arbiter across sites<a class="headerlink" href="#deploy-primary-secondary-arbiter-across-sites" title="Permanent link">&para;</a></h2>
+<p>Use this layout when you want <strong>two data-bearing sites</strong> and a third site that only participates in elections. This third site hosts the <a href="arbiter.html">arbiter</a> node that stores no data and cannot become primary.  The arbiter breaks election ties so the replica set keeps an odd number of voters.</p>
+<p>This topology uses <code>replsets.externalNodes.arbiterOnly</code> and requires Percona Operator for MongoDB 1.23.0 or later. </p>
+<table>
+<thead>
+<tr>
+<th>Site</th>
+<th>Role</th>
+<th>Members</th>
+<th>Name</th>
+<th>Namespace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Main (data center 1)</td>
+<td>Data-bearing, Operator-managed</td>
+<td>1 Pod (<code>size: 1</code>)</td>
+<td><code>main-cluster</code></td>
+<td><code>main</code></td>
+</tr>
+<tr>
+<td>Replica (data center 2)</td>
+<td>Data-bearing, unmanaged</td>
+<td>1 Pod (<code>unmanaged: true</code>, <code>size: 1</code>)</td>
+<td><code>replica-cluster</code></td>
+<td><code>replica</code></td>
+</tr>
+<tr>
+<td>Arbiter (data center 3)</td>
+<td>Arbiter only, unmanaged</td>
+<td>1 arbiter Pod</td>
+<td><code>arbiter-cluster</code></td>
+<td><code>arbiter</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="deploy-the-replica-site-data-bearing">Deploy the Replica site (data-bearing)<a class="headerlink" href="#deploy-the-replica-site-data-bearing" title="Permanent link">&para;</a></h3>
+<p>Make sure you have completed the <a href="#common-steps">Common steps</a> before you proceed.</p>
+<p>Deploy one unmanaged data-bearing Replica site following the steps from <a href="#deploy-the-replica-sites">Deploy the replica site</a>. 
+Create the Secrets from the files you created for the <code>replica-cluster</code>.</p>
+<p>Use the <code>$REPLICA</code> namespace and the cluster name <code>replica-cluster</code>. Apply the corresponding Secret files, set <code>unmanaged: true</code>, <code>backup.enabled: false</code>, <code>replsets.size: 1</code>, and expose the Pod.</p>
+<p>The example configuration is:</p>
+<div class="highlight"><span class="filename">cr-replica.yaml</span><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">psmdb.percona.com/v1</span>
+<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PerconaServerMongoDB</span>
+<span class="nt">metadata</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">replica-cluster</span>
+<span class="w">  </span><span class="nt">finalizers</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">percona.com/delete-psmdb-pods-in-order</span>
+<span class="nt">spec</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">unmanaged</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">  </span><span class="nt">updateStrategy</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">RollingUpdate</span>
+<span class="w">  </span><span class="nt">secrets</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">users</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">replica-cluster-secrets</span>
+<span class="w">    </span><span class="nt">encryptionKey</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">replica-cluster-mongodb-encryption-key</span>
+<span class="w">    </span><span class="nt">ssl</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">replica-cluster-ssl</span>
+<span class="w">    </span><span class="nt">sslInternal</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">replica-cluster-ssl-internal</span>
+<span class="w">  </span><span class="nt">unsafeFlags</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">replsetSize</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">  </span><span class="nt">replsets</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rs0</span>
+<span class="w">      </span><span class="nt">size</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
+<span class="w">      </span><span class="nt">expose</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">        </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ClusterIP</span>
+<span class="w">  </span><span class="nt">sharding</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="w">  </span><span class="nt">backup</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="w">  </span><span class="c1">#The rest of your configuration</span>
+</code></pre></div>
+<h3 id="deploy-the-arbiter-site">Deploy the arbiter site<a class="headerlink" href="#deploy-the-arbiter-site" title="Permanent link">&para;</a></h3>
+<p>Deploy a third cluster that hosts the arbiter node. You can run this site on Kubernetes (shown here) or as a standalone <code>mongod</code> arbiter outside Kubernetes.</p>
+<ol>
+<li>
+<p>Apply the arbiter site Secrets:</p>
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>arbiter-cluster-mongodb-encryption-key.yaml<span class="w"> </span>-n<span class="w"> </span><span class="nv">$ARBITER</span>
+kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>arbiter-cluster-secrets.yaml<span class="w"> </span>-n<span class="w"> </span><span class="nv">$ARBITER</span>
+kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>arbiter-cluster-ssl-internal.yaml<span class="w"> </span>-n<span class="w"> </span><span class="nv">$ARBITER</span>
+kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>arbiter-cluster-ssl.yaml<span class="w"> </span>-n<span class="w"> </span><span class="nv">$ARBITER</span>
+</code></pre></div>
+</li>
+<li>
+<p>Configure the Custom Resource so this site runs an arbiter. Rename the file to <code>deploy/cr-arbiter.yaml</code>.</p>
+<p>Important settings:</p>
+<ul>
+<li>A distinct cluster name (for example, <code>arbiter-cluster</code>)</li>
+<li><code>unmanaged: true</code></li>
+<li><code>updateStrategy</code>: <code>RollingUpdate</code> or <code>OnDelete</code></li>
+<li><code>unsafeFlags.replsetSize: true</code> and <code>replsets.size: 0</code></li>
+<li><code>replsets.arbiter.enabled: true</code> and <code>arbiter.size: 1</code></li>
+<li>Pod exposure enabled so other sites can reach the arbiter</li>
+<li>Secrets created in the previous step</li>
+</ul>
+<p>Example configuration:</p>
+<div class="highlight"><span class="filename">cr-arbiter.yaml</span><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">psmdb.percona.com/v1</span>
+<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PerconaServerMongoDB</span>
+<span class="nt">metadata</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">arbiter-cluster</span>
+<span class="nt">spec</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">unmanaged</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">  </span><span class="nt">updateStrategy</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">RollingUpdate</span>
+<span class="w">  </span><span class="nt">secrets</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">users</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">arbiter-cluster-secrets</span>
+<span class="w">    </span><span class="nt">encryptionKey</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">arbiter-cluster-mongodb-encryption-key</span>
+<span class="w">    </span><span class="nt">ssl</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">arbiter-cluster-ssl</span>
+<span class="w">    </span><span class="nt">sslInternal</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">arbiter-cluster-ssl-internal</span>
+<span class="w">  </span><span class="nt">unsafeFlags</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">replsetSize</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">  </span><span class="nt">replsets</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rs0</span>
+<span class="w">    </span><span class="nt">size</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
+<span class="w">    </span><span class="nt">expose</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">      </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ClusterIP</span>
+<span class="w">    </span><span class="nt">arbiter</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">      </span><span class="nt">size</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
+<span class="w">  </span><span class="nt">sharding</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+</code></pre></div>
+</li>
+<li>
+<p>Apply the configuration:</p>
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>deploy/cr-arbiter.yaml<span class="w"> </span>-n<span class="w"> </span><span class="nv">$ARBITER</span>
+</code></pre></div>
+<p>The arbiter Pod is named <code>{cluster}-{replset}-arbiter-0</code> (for example, <code>arbiter-cluster-rs0-arbiter-0</code>).</p>
 </li>
 </ol>
+<h3 id="add-the-replica-member-and-external-arbiter-to-the-main-site">Add the Replica member and external arbiter to the Main site<a class="headerlink" href="#add-the-replica-member-and-external-arbiter-to-the-main-site" title="Permanent link">&para;</a></h3>
+<p>On the Main site, register both remote members under <code>replsets.externalNodes</code>:</p>
+<ul>
+<li>The Replica site data member as a normal voting member</li>
+<li>The arbiter site’s <strong>arbiter Pod</strong> (not its data Pod) with <code>arbiterOnly: true</code>, <code>votes: 1</code>, and <code>priority: 0</code>.</li>
+</ul>
+<p>Specify the member&rsquo;s endpoints in the format <code>&lt;pod-name&gt;.&lt;service-name&gt;.&lt;namespace&gt;.svc.cluster.local:27017</code> (the service name is typically <code>&lt;cluster-name&gt;-&lt;replset-name&gt;</code>). To get the endpoint, run <code>kubectl get psmdb</code> on each site and check the output.</p>
+<div class="highlight"><span class="filename">cr-main.yaml</span><pre><span></span><code><span class="nt">replsets</span><span class="p">:</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rs0</span>
+<span class="w">  </span><span class="nt">size</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
+<span class="w">  </span><span class="nt">externalNodes</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">host</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">replica-cluster-rs0-0.replica-cluster-rs0.replica.svc.cluster.local:27017</span>
+<span class="w">    </span><span class="nt">votes</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
+<span class="w">    </span><span class="nt">priority</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">host</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">arbiter-cluster-rs0-arbiter-0.arbiter-cluster-rs0.arbiter.svc.cluster.local:27017</span>
+<span class="w">    </span><span class="nt">votes</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
+<span class="w">    </span><span class="nt">priority</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
+<span class="w">    </span><span class="nt">arbiterOnly</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+</code></pre></div>
+<p>If the arbiter runs outside Kubernetes, use its externally reachable hostname instead.</p>
+<h2 id="verify-replica-set">Verify replica set<a class="headerlink" href="#verify-replica-set" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>Get the <code>databaseAdmin</code> password from the Main site:</p>
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>get<span class="w"> </span>secret<span class="w"> </span>main-cluster-secrets<span class="w"> </span>-n<span class="w"> </span><span class="nv">$MAIN</span><span class="w"> </span>-o<span class="w"> </span><span class="nv">jsonpath</span><span class="o">=</span><span class="s2">&quot;{.data.MONGODB_DATABASE_ADMIN_PASSWORD}&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>base64<span class="w"> </span>--decode
+</code></pre></div>
+</li>
+<li>
+<p>Connect to the Main site Pod and list members:</p>
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>-n<span class="w"> </span><span class="nv">$MAIN</span><span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-it<span class="w"> </span>main-cluster-rs0-0<span class="w"> </span>--<span class="w"> </span>mongosh<span class="w"> </span>-u<span class="w"> </span>databaseAdmin<span class="w"> </span>-p<span class="w"> </span>&lt;dbAdminPassword&gt;
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>rs.status().members
+</code></pre></div>
+</li>
+</ol>
+<p>The output differs per deployed topology:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Three data-bearing sites</label><label for="__tabbed_3_2">PSA architecture</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>You should see <strong>three</strong> data-bearing voting members (Main, Replica 1, Replica 2), all with <code>health: 1</code> when network and TLS configuration are correct.</p>
+</div>
+<div class="tabbed-block">
+<p>You should see <strong>three</strong> voting members: the Main data Pod, the Replica data Pod, and the external arbiter (<code>ARBITER</code> / <code>arbiterOnly</code>), all with <code>health: 1</code> when network and TLS configuration are correct.</p>
+</div>
+</div>
+</div>
+<h2 id="using-more-than-one-data-bearing-member-per-site">Using more than one data-bearing member per site<a class="headerlink" href="#using-more-than-one-data-bearing-member-per-site" title="Permanent link">&para;</a></h2>
+<p>You can scale the same idea beyond single-member sites. For example, deploy two data-bearing members on the Main site and two on the Replica site (<code>size: 2</code> on each), then add a single external arbiter so the total number of voters stays odd (2 + 2 + 1). Use <code>unsafeFlags.replsetSize: true</code> when a site has an even number of local members without a local arbiter. The interconnect pattern is the same: list remote data members and the shared arbiter under <code>externalNodes</code>, with <code>arbiterOnly: true</code> on the arbiter entry.</p>
 <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 31, 2025 18:21:39 UTC">October 31, 2025</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 23, 2026 17:08:57 UTC">July 23, 2026</span>
       
         <br>
         Created:

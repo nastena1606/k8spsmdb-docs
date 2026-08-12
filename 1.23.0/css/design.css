@@ -220,6 +220,12 @@
 .md-header__topic:hover {
     opacity: 0.7;
 }
+/* Version switcher only: undo topic fade while the menu is open.
+   Parent opacity would otherwise make .md-version__list translucent. */
+.md-header__topic:has(.md-version:hover),
+.md-header__topic:has(.md-version:focus-within) {
+    opacity: 1;
+}
 
 /* Footer */
 
@@ -661,6 +667,19 @@ i[warning] [class*="moji"] {
 }
 #versionSelect::-ms-expand {
     display: none;
+}
+
+/* Version switcher dropdown only — solid surface in both palettes */
+.md-version__list {
+    background-color: var(--md-default-bg-color);
+    color: var(--md-typeset-color);
+}
+.md-version__link {
+    color: var(--md-typeset-color);
+}
+.md-version__link:focus,
+.md-version__link:hover {
+    color: var(--md-accent-fg-color);
 }
 
 /* Media queries */
