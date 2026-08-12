@@ -669,19 +669,6 @@ i[warning] [class*="moji"] {
     display: none;
 }
 
-/* Version switcher dropdown only — solid surface in both palettes */
-.md-version__list {
-    background-color: var(--md-default-bg-color);
-    color: var(--md-typeset-color);
-}
-.md-version__link {
-    color: var(--md-typeset-color);
-}
-.md-version__link:focus,
-.md-version__link:hover {
-    color: var(--md-accent-fg-color);
-}
-
 /* Media queries */
 
 @media screen and (max-width: 76.1875em) {
